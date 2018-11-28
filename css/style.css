@@ -1,0 +1,321 @@
+html {
+    overflow-x: hidden;
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+   /* font-family: 'Raleway', sans-serif;*/
+}
+img.imagen {
+    width: 100%;
+    height: auto;
+    
+}
+
+a {
+    cursor: pointer;
+    
+   
+}
+
+
+a:hover {
+    color: #00B6DE;
+    text-decoration-line: none; 
+}
+
+a.nav-link.activo.barra {
+    color: #9ACAEB;
+   
+}
+button {
+    cursor: pointer;
+}
+.bg-blue {
+    background-color:  #0069A6;
+    border-top: 5px solid #9ACAEB;
+ }
+/*--------botones-------------*/
+
+ .btn-1 {
+    background-color: #0069A6;
+    border: 2px solid #0069A6;
+    color: white;
+    height: 61px;
+    width: 225px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.btn-ver-catalogo {
+    color: white;
+    border: 2px solid #0069A6;
+    background: #0069A6; 
+    width: 200px;
+    height: 60px;
+    font-weight: 700;
+    margin: 70px 0 0 0;
+    cursor: pointer;
+
+}
+.btn-ver-catalogo:hover {
+    border: 2px solid #0069A6;
+    background: transparent; 
+    color: #0069A6;
+
+}
+.btn-productos {
+    background-color: #0069A6;
+    border: 2px solid #0069A6;
+    color: white;
+    height: 61px;
+    width: 225px;
+    margin-left: 15PX;
+    cursor: pointer;
+}
+/*--------Navbar-------------*/
+
+a.nav-link.barra {
+    color: white;
+    font-size: 15px;
+    
+}
+
+a.nav-link {
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+.fa-envelope, .fa-phone, .fa-clock {
+    color: #0069A6;
+    font-size: 25px;
+}
+.img-producto {
+    padding-top: 69px;
+}
+.productos-relacionados {
+    padding-bottom: 70px;
+}
+/*-----------cAROUSEL----------*/
+
+.carousel-caption {
+    position: absolute;
+    right: 0%; 
+    TOP: 150PX;
+    left: 8%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+     text-align: LEFT; 
+}
+
+h1 {
+    font-weight: 700;
+}
+
+
+
+/*-----------NOSOTROS----------*/
+
+#nosotros {
+    background: #FAFAFA;
+    
+}
+h2.nosotros {
+    font-weight: 700;
+}
+.blue {
+    color: #0069A6;
+}
+.blue2 {
+    color: #0082CA;
+}
+.seccion1 {
+    padding: 70px 0 0 0;
+}
+
+.seccion2 {
+    padding: 50px 0 70px 0;
+}
+ 
+
+/*----------- SERVICIOS ----------*/
+ .servicios {
+     padding: 100px 0 0 0;
+ }
+
+ #servicios .imagen-redondeada {
+   
+    background-color: #0069A6;
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#servicios .imagen-redondeada img {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#servicios .imagen-redondeada:hover {
+    background-color:black;
+}
+img.img-normal {
+    width: 60px;
+}
+.services {
+    padding: 70px 0;
+}
+p.gray {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*----------- app ----------*/
+#app {
+    background-color: #00B6DE;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 70px 0 0 0;
+    position: relative;
+}
+
+h1.app {
+    font-weight: 700;
+    font-size: 50px;
+    padding: 70px 0 30px 0;
+}
+h2.app {
+    font-weight: 700;
+    padding: 10px 0 30px 0; 
+}
+h5.app {
+    padding-bottom: 50px;
+}
+.brand-app {
+    padding-bottom: 140px;
+}
+.img-app {
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+/*----------- Productos-inicio ----------*/
+#productos-carousel {
+    padding: 100px 0;
+    
+}
+.item-carousel {
+    margin: 10px 20px;
+}
+.item-title {
+    padding: 20px 0 5px 0;
+    color: #0069A6;
+}
+.item-description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+
+}
+/*-------------PRODUCTOS-------*/
+.producto {
+    padding: 70px 0; 
+}
+.fa-arrow-circle-left {
+    font-size: 40px;
+    color: #0069A6;
+    padding: 10px 0 50px 0;
+}
+
+h5.regresar {
+    padding: 20px 10px;
+    font-weight: 700;
+    display: inline-block;
+}
+ ul.lista-productos {
+     padding: 30px 15px;
+ }
+
+ .item-product-subtitle {
+    padding: 0px 0 5px 0;
+    color: #0069A6;
+}
+
+/*---------REFACCIONES-----*/
+ul.lista-refacciones {
+    padding: 10px 15px;
+}
+#refacciones {
+    z-index: 1;
+    background: linear-gradient(
+        rgba(34, 34, 34, 0.6), 
+        rgba(34, 34, 34, 0.5)
+      ), url("../images/Trailer_Precedent_5Row.jpg") no-repeat ;
+      background-size: cover;
+     padding:   200px 0 100px 0;
+}
+.titulo-refacciones {
+    color: white;
+    font-weight: 800;
+   
+}
+
+.img-refaccion {
+    padding-top: 00px;
+}
+
+/*-----------FOOTER ----------*/
+ footer.footer {
+     background: #0069A6;
+     border-top: 20px solid #0082CA;
+     padding: 40px 0 0 0;
+     color: white;
+ }
+ h2.footer {
+     color: #9ACAEB;
+ }
+ p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+ }
+ h5.footer {
+     color: #9ACAEB;
+ }
+
+ .margen-movil {
+     color: white;
+     font-size: 12px<
+     
+ }
+ .fa-phone.dos , .fa-envelope.dos , .fa-map-marker-alt.dos{
+     color:white;
+     font-size: 18px;
+     padding:  0px  5px 5px 0  ;
+ }
+ .oculto {
+     display: none;
+     font-family: 'Raleway', sans-serif;
+     font-size: 14px;
+ }
+ .footer-link {
+     color: white;
+     font-family: 'Raleway', sans-serif;
+     font-size: 14px;
+ }
+
+ footer {
+     position: absolute;
+     bottom: -350px;
+     width: 100%;
+ }
