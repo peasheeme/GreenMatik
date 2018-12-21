@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.theme.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
      <link rel="stylesheet" href="css/style.css">
     <title>Contacto</title>
   </head>
@@ -37,26 +38,34 @@
                 </ul>
         </nav>
 
-        <nav class="navbar justify-content-end bg-blue">
-              <ul class="nav justify-content-end">
-                      <li class="nav-item">
-                        <a class="nav-link activo barra" href="index.html">INICIO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link barra" href="#servicios">SERVICIOS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link barra" href="catalogo.html">CATÁLOGO</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link barra" href="refacciones.html">REFACCIONES</a>
-                     </li>
-                      <li class="nav-item">
-                           <a class="nav-link barra" href="contacto.html">CONTACTO</a>
+        <header>    
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" class="hamburger hamburger--emphatic-r">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </label>
+          
+            <nav class="menu-responsive navbar justify-content-end bg-blue">
+                <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link activo barra" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link barra" href="#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link barra" href="catalogo.html">CATÁLOGO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link barra" href="refacciones.html">REFACCIONES</a>
                        </li>
-                      
-                    </ul>
+                        <li class="nav-item">
+                             <a class="nav-link barra" href="contacto.html">CONTACTO</a>
+                         </li>
+                </ul>
             </nav>
+        </header>
 
                  
 
@@ -105,43 +114,73 @@
                 <h3 class="blue2"><strong>CONTÁCTANOS</strong></h3>  <BR>
             <div class="row">
                     <div class="col-xs-12 col-md-6">
-                            <form action="mail/FormularioContacto.php" id="contact-form" method="post" role="form">
+                        <?php
+                            if(isset($_GET['error'])){
+                                $error = $_GET['error'];
+
+                                if($error == 'faltan_valores'){
+                                    echo '<strong style="color:red;">Introduce todos los datos en todos los campos del formulario</strong>';
+                                }
+
+                                if($error == 'nombre'){
+                                    echo '<strong style="color:red;">Introduce bien el nombre</strong>';
+                                }
+
+                                if($error == 'telefono'){
+                                    echo '<strong style="color:red;">Introduce bien el teléfono</strong>';
+                                }
+                                if($error == 'email'){
+                                    echo '<strong style="color:red;">Introduce bien el e-mail</strong>';
+                                }
+                                if($error == 'estado'){
+                                    echo '<strong style="color:red;">Introduce bien el estado</strong>';
+                                }
+                                if($error == 'ciudad'){
+                                    echo '<strong style="color:red;">Introduce bien la ciudad</strong>';
+                                }
+                                if($error == 'mensaje'){
+                                    echo '<strong style="color:red;">Introduce bien el mensaje</strong>';
+                                }
+                            }
+
+                        ?>
+
+
+                            <form action="mail/enviar.php" id="contact-form" method="post" role="form">
                                 <div class="ajax-hidden">
                                     <div class="form-group">
                                        <label class="sr-only" for="c_name">Nombre</label>
-                                       <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Nombre">
+                                       <input type="text" id="c_name" class="form-control" name="nombre" placeholder="Nombre">
                                    </div>
                                    
                                    <div class="form-group">
-                                           <label class="sr-only" for="c_phone">Telefono </label>
-                                           <input type="number" id="c_phone" class="form-control" name="c_phone" placeholder="Telefono">
+                                           <label class="sr-only" for="c_phone">Teléfono </label>
+                                           <input type="number" id="c_phone" class="form-control" name="telefono" placeholder="Teléfono">
                                          </div>
                                    <div class="form-group">
                                         <label class="sr-only" for="c_email">E-mail </label>
-                                       <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+                                       <input type="email" id="c_email" class="form-control" name="email" placeholder="E-mail">
                                    </div>
                                    <div class="form-group">
                                         <label class="sr-only" for="c_name">Estado</label>
-                                        <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Estado">
+                                        <input type="text" id="c_name" class="form-control" name="estado" placeholder="Estado">
                                     </div>
                                    <div class="form-group">
                                        <label class="sr-only" for="c_name">Ciudad</label>
-                                       <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Ciudad">
+                                       <input type="text" id="c_name" class="form-control" name="ciudad" placeholder="Ciudad">
                                    </div>
                                    
                                    <div class="form-group">
-                                       <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Mensaje"></textarea>
+                                       <textarea class="form-control" id="c_message" name="mensaje" rows="7" placeholder="Mensaje"></textarea>
                                    </div>
                                    <div class="form-check ">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <input class="form-check-input" type="checkbox" value="" id="terminos">
                                           <label class="form-check-label" for="defaultCheck1">
-                                               <a class="aviso2" href="aviso-privacidad.html" target="_blank" >Acepto terminos de prvacidad</a>
+                                               <a class="aviso2" href="aviso-privacidad.html" target="_blank" >Acepto términos de privacidad</a>
                                             </label>
                                     </div>
-                                   
-                                      <a href=""> <button type="submit" class="btn-enviar">
-                                         ENVIAR
-                                   </button></a>
+                                   <input type="submit" value="ENVIAR" name="enviar" class="btn-enviar">
+                                      
                                </div>
                                <div class="ajax-response"></div>
                             </form>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -12,49 +12,62 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.theme.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
      <link rel="stylesheet" href="css/style.css">
+     
   </head>
   <body>
        
-         <nav class="navbar ">
-                <a class="navbar-brand" href="">
-                  <img src="images/brand.png"  class="d-inline-block align-top" alt="">
-               </a>
-
-                <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                          <a class="nav-link active header-oculto2 " href="#"> <i class="far fa-clock"></i> <span >SERVICIO 24 HORAS</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="tel:018006394040"><i class="fas fa-phone"></i> <span class="header-oculto">01 800 639 4040</span> </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"><i class="fas fa-envelope"></i> <span class="header-oculto">CORREO INTERNO</span></a>
-                        </li>
-                       
-                        
-                      </ul>
-              </nav>
-
-              <nav class="navbar justify-content-end bg-blue">
+        
+             <nav class="navbar ">
+                    <a class="navbar-brand" href="">
+                      <img src="images/brand.png"  class="d-inline-block align-top" alt="">
+                   </a>
+            
                     <ul class="nav justify-content-end">
                             <li class="nav-item">
-                              <a class="nav-link activo barra" href="index.html">INICIO</a>
+                              <a class="nav-link active header-oculto2 " href="#"> <i class="far fa-clock"></i> <span >SERVICIO 24 HORAS</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link barra" href="#servicios">SERVICIOS</a>
+                              <a class="nav-link" href="tel:018006394040"><i class="fas fa-phone"></i> <span class="header-oculto">01 800 639 4040</span> </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link barra" href="catalogo.html">CATÁLOGO</a>
+                              <a class="nav-link" href="#"><i class="fas fa-envelope"></i> <span class="header-oculto">CORREO INTERNO</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link barra" href="refacciones.html">REFACCIONES</a>
-                           </li>
-                            <li class="nav-item">
-                                 <a class="nav-link barra" href="contacto.html">CONTACTO</a>
-                             </li>
-                    </ul>
-                </nav>
+                           
+                            
+                          </ul>
+                  </nav>
+
+
+                <header>    
+                    <input type="checkbox" id="btn-menu">
+                    <label for="btn-menu" class="hamburger hamburger--emphatic-r">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </label>
+                  
+                    <nav class="menu-responsive navbar justify-content-end bg-blue">
+                        <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                  <a class="nav-link activo barra" href="index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link barra" href="#servicios">SERVICIOS</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link barra" href="catalogo.html">CATÁLOGO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link barra" href="refacciones.html">REFACCIONES</a>
+                               </li>
+                                <li class="nav-item">
+                                     <a class="nav-link barra" href="contacto.html">CONTACTO</a>
+                                 </li>
+                        </ul>
+                    </nav>
+                </header>
              
               
     <section id="carousel">
@@ -345,6 +358,15 @@
     <script src="js/jquery-1.11.0.min.js"> </script>
     <script src="js/owl.carousel.min.js"> </script>
     <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+        /*menu hamburguesa */
+        var hamburger=document.querySelector('.hamburger');
+        //on click
+        hamburger.addEventListener('click', function(){
+            hamburger.classList.toggle('is-active');
+        });
+    
+    </script>
     <script>
    $("#owl-catalogo").owlCarousel({
     items : 4,
