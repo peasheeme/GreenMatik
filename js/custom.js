@@ -13,3 +13,27 @@ $("#owl-products").owlCarousel({
     autoPlay: 5000,
     singleItem: true
   });
+
+  var filterizd = $('.filtr-container').filterizr({
+    animationDuration: 0.5, // in seconds
+    filter: 'all', // Initial filter 
+    delayMode: 'progressive',
+    controlsSelector: '', // Selector for custom controls
+    easing: "ease-in",    
+    layout: 'sameSize'
+});
+
+/*function Descripcion-producto ( titulo, texto) {
+  console.log('holi')
+
+}*/
+
+$(function(){
+  var botones = $(".cont button");
+  botones.click(function() {
+    botones.removeClass('activo');
+    $(this).addClass('activo');
+  });
+});
+
+

@@ -14,14 +14,29 @@ img.imagen {
     height: auto;
     
 }
-
+img {
+    max-width: 100% ;
+    height: auto;
+}
 a {
     cursor: pointer;
-    
-   
 }
 
-
+.modal-fidencio{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	display: flex;
+	z-index: 10000;
+	animation: modal 0.5s 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	visibility: hidden;
+	opacity: 0;
+} 
 a:hover {
     color: #00B6DE;
     text-decoration-line: none; 
@@ -39,7 +54,9 @@ button {
     border-top: 5px solid #9ACAEB;
  }
 /*--------botones-------------*/
-
+.btn-1:focus, .btn-application:focus {
+    outline: none;
+ }
  .btn-1 {
     background-color: #0069A6;
     border: 2px solid #0069A6;
@@ -48,6 +65,38 @@ button {
     width: 225px;
     margin-top: 50px;
     cursor: pointer;
+}
+.btn-1:hover {
+    background-color: #0082CA;
+    border: 2px solid #0082CA;
+}
+.btn-10 {
+    background-color: #0069A6;
+    border: 2px solid #0069A6;
+    color: white;
+    height: 61px;
+    width: 225px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.btn-10:hover {
+    background-color: #0082CA;
+    border: 2px solid #0082CA;
+}
+
+.btn-application {
+    background-color: #0069A6;
+    border: 2px solid #0069A6;
+    color: white;
+    height: 61px;
+    width: 225px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.btn-application:hover {
+    background-color: #0082CA;
+    border: 2px solid #0082CA;
 }
 .btn-ver-catalogo {
     color: white;
@@ -75,6 +124,66 @@ button {
     margin-left: 15PX;
     cursor: pointer;
 }
+.btn-productos:hover {
+    background: #0082CA;
+    border: 2px solid #0082CA;
+}
+
+.btn-sucursales {
+    background-color: #0069A6;
+    border: 2px solid #0069A6;
+    color: white;
+    height: 61px;
+    width: 225px;
+    margin: 50px 255px 0 0;
+    cursor: pointer;
+}
+
+.btn-cerrar {
+    background-color: #0069A6;
+    border: 2px solid #0069A6;
+    color: white;
+    height: 61px;
+    width: 225px;
+    
+    cursor: pointer;
+}
+
+.btn-enviar {
+    background-color: #0069A6;
+    border: 2px solid #0069A6;
+    color: white;
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.botonesCatalogo {
+    background-color: transparent;
+    border: 2px solid #0069A6;
+    color: #0069A6;
+    padding: 9px 17px;
+    margin: 6px 3px;
+    cursor: pointer;
+}
+.botonesCatalogo:hover {
+    background: #0082CA;
+    border: 2px solid #0082CA;
+    color: white;
+}
+
+.activo{
+    background-color: #0069A6;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+li.boton {
+    list-style: none;
+    display: inline-block;
+}
 /*--------Navbar-------------*/
 
 a.nav-link.barra {
@@ -83,29 +192,41 @@ a.nav-link.barra {
     
 }
 
+.mostrar-image {
+    display: none;
+    }
+
 a.nav-link {
     color: black;
     font-weight: 700;
     font-size: 15px;
-    
+   
+}
+a.nav-link:hover {
+   color: #0069A6; 
+}
+
+a.nav-link.barra:hover {
+    color: #9ACAEB;
+}
+a.nav-link.activo.barra:hover {
+    color: white;
 }
 .fa-envelope, .fa-phone, .fa-clock {
     color: #0069A6;
     font-size: 25px;
 }
-.img-producto {
-    padding-top: 69px;
-}
+
 .productos-relacionados {
     padding-bottom: 70px;
 }
 /*-----------cAROUSEL----------*/
 
-.carousel-caption {
+.carousel-caption2 {
     position: absolute;
     right: 0%; 
-    TOP: 150PX;
-    left: 8%;
+    TOP: 30%;
+    left: 15%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -113,11 +234,23 @@ a.nav-link {
      text-align: LEFT; 
 }
 
+.carousel-caption {
+    position: absolute;
+    TOP: 30%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+     text-align: right; 
+}
+
 h1 {
     font-weight: 700;
 }
 
-
+#inter-movil {
+    display: none;
+}
 
 /*-----------NOSOTROS----------*/
 
@@ -178,6 +311,7 @@ img.img-normal {
 p.gray {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
+    
 }
 
 
@@ -211,6 +345,11 @@ h5.app {
     
 }
 
+.button-app {
+    max-width: 100% ;
+    height: auto;
+}
+
 /*----------- Productos-inicio ----------*/
 #productos-carousel {
     padding: 100px 0;
@@ -228,7 +367,42 @@ h5.app {
     font-size: 14px;
 
 }
+
+/*----------- CATALOGO----------*/
+
+.item-catalogo {
+    /* padding: 0 5px; */
+    
+   
+    margin: 15px 5px;
+}
+
+.text-item {
+    background: #0069A6;
+    color: white;
+    padding: 5px 10px 1px 10px;
+    border-radius: 5px;
+}
+.text-item:hover {
+    background: #0082CA;
+}
+
+.catalogo-filtro {
+    margin-bottom: 70px;
+}
+
+
+
 /*-------------PRODUCTOS-------*/
+.img-producto {
+    padding-top: 50px;
+}
+.img-product-ocultar {
+    display: none;
+}
+.img-product-mostrar {
+    display: inline-block;
+}
 .producto {
     padding: 70px 0; 
 }
@@ -274,7 +448,71 @@ ul.lista-refacciones {
 .img-refaccion {
     padding-top: 00px;
 }
+/*---------CONTACTO ----------*/
+#contacto {
+    z-index: 1;
+    background: url("../images/bg2.jpg") no-repeat ;
+      background-size: cover;
+     padding:   200px 0 100px 0;
+}
+.titulo-sucursales {
+    padding-right: 100px;
+    color: white;
+}
 
+.sucursales {
+    padding: 50px 0 70px 0; 
+    font-family: 'Raleway', sans-serif
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0rem;
+}
+.padding-superior {
+    padding: 40px 0 10px 0;
+    
+}
+.contacto-text {
+    font-size: 14px;
+    
+}
+a.contacto-tel {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #0069A6;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.padding-superior-tel {
+    padding:  10px 0;
+    
+    
+}
+
+.mostrar-mapa {
+    display: none ;
+}
+/*---------Modales-----*/
+.modal-header {
+    
+    color: white;
+    background: #0069A6;
+}
+
+.close {
+    color: white;
+}
+.close:hover {
+    color: #9ACAEB;
+}
 /*-----------FOOTER ----------*/
  footer.footer {
      background: #0069A6;
@@ -313,9 +551,297 @@ ul.lista-refacciones {
      font-family: 'Raleway', sans-serif;
      font-size: 14px;
  }
+ .copy-mostrar {
+    display: none;
+    margin-top: -40px;
+}
 
- footer {
+ /*footer {
      position: absolute;
      bottom: -350px;
      width: 100%;
+ }*/
+ .sucursales-footer {
+     padding-left: 25px;
  }
+ .margen-movil2 {
+    padding: 90px 0 0 0;
+}
+p.copy {
+    margin-top: 40px;
+}
+
+ /*----------AVISO---------*/
+ .terminos {
+     padding: 70px 0 0 0;
+ }
+
+ @media screen and (max-width:1270px){  
+    .img-app {
+        position: absolute;
+        bottom: 0px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+ }
+ @media screen and (max-width:1270px){
+       
+ .brand-app {
+    padding-bottom: 70px;
+}
+h1.app {
+    font-weight: 700;
+    font-size: 46px;
+    padding: 20px 0 30px 0;
+}
+h1.app {
+    font-weight: 700;
+    font-size: 46px;
+    padding: 20px 0 30px 0;
+}
+
+    h1.titulo-carousel {    
+        font-size: 30px;
+    }
+    .btn-1 {
+        background-color: #0069A6;
+        border: 2px solid #0069A6;
+        color: white;
+        height: 55px;
+        width: 190px;
+        margin-top: 55px;
+        cursor: pointer;
+    }
+    .btn-application {
+        background-color: #0069A6;
+        border: 2px solid #0069A6;
+        color: white;
+        height: 55px;
+        width: 190px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .carousel-caption {
+        position: absolute;
+        TOP: 23%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: right;
+    }
+
+    .carousel-caption2 {
+        position: absolute;
+        right: 0%; 
+        TOP: 20%;
+        left: 10%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+         text-align: LEFT; 
+    }
+    
+
+}
+@media screen and (max-width:992px){  
+
+    p.copy {
+        margin-top: 11px;
+    }
+    h1.app {
+        font-weight: 700;
+        font-size: 36px;
+        padding: 0px 0 30px 0;
+    }
+    h1.titulo-carousel {    
+        font-size: 30px;
+    }
+    .btn-1 {
+        background-color: #0069A6;
+        border: 2px solid #0069A6;
+        color: white;
+        height: 52px;
+        width: 152px;
+        margin-top: 18px;
+        cursor: pointer;
+    }
+    .btn-application {
+        background-color: #0069A6;
+        border: 2px solid #0069A6;
+        color: white;
+        height: 52px;
+        width: 152px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .img-producto {
+        padding-top: 155px;
+    }
+   
+    /* CATÁLOGO*/
+    .titulo-refacciones {
+        color: white;
+        font-weight: 800;
+        font-size: 32px;
+    }
+    #refacciones {
+        z-index: 1;
+        background: linear-gradient(
+     rgba(34, 34, 34, 0.6), 
+     rgba(34, 34, 34, 0.5)
+     ), url(../images/Trailer_Precedent_5Row.jpg) no-repeat;
+        background-size: cover;
+        padding: 150px 0 110px 0;
+    }
+}
+@media screen and (max-width:815px){  
+    .header-oculto {
+        display: none;
+    }
+    .p.copy {
+        margin-top: 10px;
+    }
+    .copy-mostrar {
+        display: inline-block;
+        margin-top: -40px;
+    }
+    h1.titulo-carousel {
+        font-size: 23px;
+    }
+    .btn-1 {
+        background-color: #0069A6;
+        border: 2px solid #0069A6;
+        color: white;
+        height: 42px;
+        width: 142px;
+        margin-top: 18px;
+        cursor: pointer;
+    }
+    .btn-application {
+        background-color: #0069A6;
+        border: 2px solid #0069A6;
+        color: white;
+        height: 42px;
+        width: 142px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .copy-oculto {
+        display: none;
+    }
+}
+
+@media screen and (max-width:770px){   
+    #carousel {
+         display: none;
+    }
+    #inter-movil {
+        display: flex;
+        padding: 200px 0;
+        z-index: auto !important;
+        background: rgba(34, 34, 34, .5) !important;
+        background-size: cover;
+    }
+} 
+@media screen and (max-width:765px){  
+    .brand-app {
+       padding-bottom: 70px;
+   }
+   .img-app {
+    position: inherit;
+    }
+    a.nav-link {
+        color: black;
+        font-weight: 700;
+        font-size: 15px;
+        padding: 10px;
+    }
+    h2.nosotros.m-top {
+        margin-top: 50px;
+    }
+    .ocultar {
+        display: none;
+    }
+    .mostrar-image {
+    display: flex;
+    }
+    .img-product-mostrar {
+        display: none;
+    }
+    .img-product-ocultar {
+        display: inline-flex;
+    }
+    .productos-relacionados {
+        padding-bottom: 70px;
+        margin-top: -50px;
+    }
+    .mostrar-mapa {
+        display: flex;
+    }
+    .mapa-oculto {
+        display: none;
+    }
+ }
+
+@media screen and (max-width:569px){  
+  
+    .img-button {
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .button-app {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .botonesCatalogo {
+        background-color: transparent;
+        border: 2px solid #0069A6;
+        color: #0069A6;
+        padding: 7px 12px;
+        margin: 6px 3px;
+        cursor: pointer;
+    }   
+    .activo {
+        background-color: #0069A6;
+        color: #fff;
+        font-weight: 700;
+    }
+    .botonesCatalogo:focus {
+       outline: none;
+    }
+    .btn-productos {
+        
+        margin-bottom: 46px;
+    }
+    .img-producto {
+        padding-top: 0;
+    }
+   
+    
+}
+@media screen and (max-width:450px){  
+
+    a.nav-link {
+        color: black;
+        font-weight: 700;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .margen-movil2 {
+        padding: 69px 0 0 0;
+    }
+    .seccion1 {
+        padding: 10px 0;
+    }
+    .seccion2 {
+        padding: 0px 0 70px 0;
+    }
+   
+    
+}
