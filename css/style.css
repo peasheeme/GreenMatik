@@ -145,7 +145,6 @@ button {
     color: white;
     height: 61px;
     width: 225px;
-    
     cursor: pointer;
 }
 
@@ -167,6 +166,7 @@ button {
     margin: 6px 3px;
     cursor: pointer;
 }
+
 .botonesCatalogo:hover {
     background: #0082CA;
     border: 2px solid #0082CA;
@@ -178,7 +178,6 @@ button {
     color: #fff;
     font-weight: 700;
 }
-
 
 li.boton {
     list-style: none;
@@ -197,7 +196,6 @@ header nav ul li a.activo{
 
 header #btn-menu{
 	display: none;
-	
 }
 
 header label {
@@ -574,10 +572,30 @@ a.contacto-tel {
     font-family: 'Roboto', sans-serif;
     
 }
+
 .padding-superior-tel {
     padding:  10px 0;
-    
-    
+}
+
+.errores{
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background: red;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -34px;
+    margin-left: 360px;
+    padding: 4px;
+    position: absolute;
+}
+
+@media screen and (max-width:480px){
+    .errores{
+        margin-left: 190px;
+    }
 }
 
 .mostrar-mapa {
@@ -925,6 +943,22 @@ h1.app {
     .seccion2 {
         padding: 0px 0 70px 0;
     }
-   
-    
+}
+
+#gracias{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#gracias h1{
+    padding-top: 20px;      
+}
+
+.gracias-texto{
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
 }

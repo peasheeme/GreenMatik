@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contacto</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/hamburgers.css">
      <link rel="stylesheet" href="css/style.css">
-    <title>Contacto</title>
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   </head>
   <body>
 
@@ -61,7 +62,7 @@
                             <a class="nav-link barra" href="refacciones.html">REFACCIONES</a>
                        </li>
                         <li class="nav-item">
-                             <a class="nav-link barra" href="contacto.html">CONTACTO</a>
+                             <a class="nav-link barra" href="contacto.php">CONTACTO</a>
                          </li>
                 </ul>
             </nav>
@@ -108,85 +109,66 @@
 
             
 
-    <section class="sucursales">
+    <section class="sucursales" id="Contacto">
         <div class="container">
                 <br>
-                <h3 class="blue2"><strong>CONTÁCTANOS</strong></h3>  <BR>
+                <h3 class="blue2"><strong>CONTÁCTANOS</strong></h3> <div id="mensajeCampos" class="errores">Todos los campos son requeridos</div>  <BR>
             <div class="row">
                     <div class="col-xs-12 col-md-6">
-                        <?php
-                            if(isset($_GET['error'])){
-                                $error = $_GET['error'];
-
-                                if($error == 'faltan_valores'){
-                                    echo '<strong style="color:red;">Introduce todos los datos en todos los campos del formulario</strong>';
-                                }
-
-                                if($error == 'nombre'){
-                                    echo '<strong style="color:red;">Introduce bien el nombre</strong>';
-                                }
-
-                                if($error == 'telefono'){
-                                    echo '<strong style="color:red;">Introduce bien el teléfono</strong>';
-                                }
-                                if($error == 'email'){
-                                    echo '<strong style="color:red;">Introduce bien el e-mail</strong>';
-                                }
-                                if($error == 'estado'){
-                                    echo '<strong style="color:red;">Introduce bien el estado</strong>';
-                                }
-                                if($error == 'ciudad'){
-                                    echo '<strong style="color:red;">Introduce bien la ciudad</strong>';
-                                }
-                                if($error == 'mensaje'){
-                                    echo '<strong style="color:red;">Introduce bien el mensaje</strong>';
-                                }
-                            }
-
-                        ?>
-
-
+                       
                             <form action="mail/enviar.php" id="contact-form" method="post" role="form">
                                 <div class="ajax-hidden">
+                                    <?php                                          
+                                        if(isset($_GET['error'])):
+                                            echo '<p style="color:red;">'.$_GET['error'].'</p>';
+                                        endif;
+                                    ?>
                                     <div class="form-group">
                                        <label class="sr-only" for="c_name">Nombre</label>
-                                       <input type="text" id="c_name" class="form-control" name="nombre" placeholder="Nombre">
+                                       <input type="text" id="c_name" class="form-control" name="nombre" placeholder="Nombre" onkeypress="return validarLetras(event);">
+                                       <div id="mensaje1" class="errores">Ingresa tu nombre</div>
                                    </div>
                                    
                                    <div class="form-group">
-                                           <label class="sr-only" for="c_phone">Teléfono </label>
-                                           <input type="number" id="c_phone" class="form-control" name="telefono" placeholder="Teléfono">
-                                         </div>
+                                        <label class="sr-only" for="c_phone">Teléfono </label>
+                                        <input type="tel" id="c_phone" class="form-control" name="telefono" placeholder="Teléfono" onkeypress="return validarNumeros(event);">
+                                        <div id="mensaje2" class="errores">Ingresa un télefono válido</div>
+                                    </div>
                                    <div class="form-group">
                                         <label class="sr-only" for="c_email">E-mail </label>
                                        <input type="email" id="c_email" class="form-control" name="email" placeholder="E-mail">
+                                       <div id="mensaje3" class="errores">Ingresa tu e-mail</div>
                                    </div>
                                    <div class="form-group">
                                         <label class="sr-only" for="c_name">Estado</label>
-                                        <input type="text" id="c_name" class="form-control" name="estado" placeholder="Estado">
+                                        <input type="text" id="c_estado" class="form-control" name="estado" placeholder="Estado" onkeypress="return validarLetras(event);">
+                                        <div id="mensaje4" class="errores">Ingresa el estado</div>
                                     </div>
                                    <div class="form-group">
                                        <label class="sr-only" for="c_name">Ciudad</label>
-                                       <input type="text" id="c_name" class="form-control" name="ciudad" placeholder="Ciudad">
+                                       <input type="text" id="c_ciudad" class="form-control" name="ciudad" placeholder="Ciudad" onkeypress="return validarLetras(event);">
+                                       <div id="mensaje5" class="errores">Ingresa tu ciudad</div>
                                    </div>
                                    
                                    <div class="form-group">
                                        <textarea class="form-control" id="c_message" name="mensaje" rows="7" placeholder="Mensaje"></textarea>
+                                       <div id="mensaje6" class="errores">Ingresa un mensaje</div>
                                    </div>
                                    <div class="form-check ">
-                                        <input class="form-check-input" type="checkbox" value="" id="terminos">
+                                        <input class="form-check-input" name="terminos" type="checkbox" value="" id="c_terminos">
                                           <label class="form-check-label" for="defaultCheck1">
                                                <a class="aviso2" href="aviso-privacidad.html" target="_blank" >Acepto términos de privacidad</a>
                                             </label>
+                                            <div id="mensaje7" class="errores">Debes aceptar los términos y condiciones</div>
                                     </div>
-                                   <input type="submit" value="ENVIAR" name="enviar" class="btn-enviar">
+                                   <input type="submit" id="btnEnviar" value="ENVIAR" name="enviar" class="btn-enviar">
                                       
                                </div>
                                <div class="ajax-response"></div>
                             </form>
                     </div>
                     <div class="col-xs-12 col-md-6 mapa-oculto" id="mapa">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.927275592708!2d-100.24018508452129!3d25.706831783661695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662eac1d343fecd%3A0x4e6e489ff6e132ad!2sAv.+3+675%2C+Central+de+Carga%2C+67129+Guadalupe%2C+N.L.!5e0!3m2!1ses-419!2smx!4v1543525857495" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.927275592708!2d-100.24018508452129!3d25.706831783661695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662eac1d343fecd%3A0x4e6e489ff6e132ad!2sAv.+3+675%2C+Central+de+Carga%2C+67129+Guadalupe%2C+N.L.!5e0!3m2!1ses-419!2smx!4v1543525857495" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
 
             </div>
@@ -554,6 +536,70 @@
                 
     
 
+    <script>
+        var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+        $(document).ready(function(){
+        
+            $("#btnEnviar").click(function(){
+                var nombre = $("#c_name").val();
+                var telefono = $("#c_phone").val();
+                var email = $("#c_email").val();
+                var estado = $("#c_estado").val();
+                var ciudad = $("#c_ciudad").val();
+                var mensaje = $("#c_message").val();
+                var terminos = $("input[type='checkbox']:checked");
+
+                if(nombre == ""){
+                    $("#mensaje1").fadeIn();
+                    return false;
+                }else{
+                    $("#mensaje1").fadeOut();
+
+                    if(telefono == "" || isNaN(telefono)){
+                        $("#mensaje2").fadeIn();
+                        return false;
+                    }else{
+                        $("#mensaje2").fadeOut();
+
+                        if(email == "" || !expr.test(email)){
+                            $("#mensaje3").fadeIn();
+                            return false;
+                        }else{
+                            $("#mensaje3").fadeOut();
+
+                            if(estado == ""){
+                                $("#mensaje4").fadeIn();
+                                return false;
+                            }else{
+                                $("#mensaje4").fadeOut();
+
+                                if(ciudad == ""){
+                                    $("#mensaje5").fadeIn();
+                                    return false;
+                                }else{
+                                    $("#mensaje5").fadeOut();
+
+                                    if(mensaje == ""){
+                                        $("#mensaje6").fadeIn();
+                                        return false;
+                                    }else{
+                                        $("#mensaje6").fadeOut();
+
+                                        if(terminos.length == 0){
+                                            $("#mensaje7").fadeIn();
+                                            return false;
+                                        }else{
+                                            $("#mensaje7").fadeOut();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
