@@ -4,8 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contacto</title>
-
+    <title>CONTACTO | FRIOCONTROL - DISTRIBUIDOR AUTORIZADO THERMOKING</title>
+    <link rel="shortcut icon" type="image/png" href="images/icons/fav.png"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -71,9 +71,7 @@
                  
 
     <!--<section id="contacto">
-        
           
-              
                     <div class=" row justify-content-end"><h1 class="titulo-sucursales">AMPLIA ZONA DE  <BR>COBERTURA EN MÉXICO</h1></div>
                    <div class=" row justify-content-end">
                      <button class="btn-sucursales ">LLÁMANOS</button>
@@ -96,19 +94,10 @@
                        
                       </div>
               </div>
-
-              
-              
-            </div>
-           
           </div>
+        </div>
     </section>
     
-             
-              
-
-            
-
     <section class="sucursales" id="Contacto">
         <div class="container">
                 <br>

@@ -9,11 +9,11 @@ $("#owl-products").owlCarousel({
   });
 
   $("#owl-refacciones").owlCarousel({
-    items : 1,
+    items : 2,
     slideSpeed : 300,
     paginationSpeed : 400,
     autoPlay: 5000,
-    singleItem: true
+    singleItem: false
   });
 
   var filterizd = $('.filtr-container').filterizr({

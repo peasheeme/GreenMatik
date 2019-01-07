@@ -189,7 +189,9 @@ li.boton {
 header{
 	width: 100%;
 }
-
+.nav-oculto-movil {
+    display: none;
+}
 header nav ul li a.activo{
 	color: #000;
 }
@@ -212,59 +214,7 @@ header label {
     display: none;
 }
 
-@media screen and (max-width:800px){
-    /*navbar*/
-    
-    header label{
-      display: block;
-    } 
 
-    header .menu-responsive{
-        position: absolute;
-        background: #000;
-        width: 100%;
-        margin-left: -200%;
-        transition: all 0.5s;
-        z-index: 100;
-        opacity: .9;
-    }
-    
-    header nav ul{
-        flex-direction: column;
-    }
-
-    header .nav{
-        margin: auto;
-    }
-    
-    header #btn-menu:checked ~ .menu-responsive {
-        margin: 0px -0;
-        padding: 30px 0;
-    }
-    
-    header nav ul li{
-        text-align: center;
-    }
-    
-    img{
-        display: block;
-        margin: auto;
-    }
-    
-    
-    .nav-link{
-        color: #fff;
-    }
-    
-    .nav-link:hover{
-        color: #000;
-    }
-    
-    header nav ul li a.activo{
-        color: #000;
-    }
-    /*/navbar*/
-}
 
 /*/menú responsive*/
 a.nav-link.barra {
@@ -463,6 +413,10 @@ h5.app {
     color: white;
     padding: 5px 10px 1px 10px;
     border-radius: 5px;
+    HEIGHT: 47px;
+    text-align: center;
+    text-transform: uppercase;
+    
 }
 .text-item:hover {
     background: #0082CA;
@@ -516,7 +470,7 @@ ul.lista-refacciones {
     background: linear-gradient(
         rgba(34, 34, 34, 0.6), 
         rgba(34, 34, 34, 0.5)
-      ), url("../images/Trailer_Precedent_5Row.jpg") no-repeat ;
+      ), url("../images/BG-PRODUCTOS.jpg") no-repeat ;
       background-size: cover;
      padding:   200px 0 100px 0;
 }
@@ -592,11 +546,7 @@ a.contacto-tel {
     position: absolute;
 }
 
-@media screen and (max-width:480px){
-    .errores{
-        margin-left: 190px;
-    }
-}
+
 
 .mostrar-mapa {
     display: none ;
@@ -835,6 +785,67 @@ h1.app {
         display: none;
     }
 }
+@media screen and (max-width:800px){
+    /*navbar*/
+    
+    header label{
+      display: block;
+    } 
+    .barra-movil {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    header .menu-responsive{
+        position: absolute;
+       
+        width: 100%;
+        margin-left: -200%;
+        transition: all 0.5s;
+        z-index: 100;
+        opacity: .9;
+    }
+    
+    header nav ul{
+        flex-direction: column;
+    }
+
+    header .nav{
+        margin: auto;
+    }
+    
+    header #btn-menu:checked ~ .menu-responsive {
+        margin: 0px -0;
+        padding: 24px 0;
+    }
+    
+    header nav ul li{
+        text-align: center;
+    }
+    
+    img{
+        display: block;
+        margin: auto;
+    }
+    
+    
+    .nav-link{
+        color: #fff;
+        padding: 20px 0;
+    }
+    
+    .nav-link:hover{
+        color: #000;
+    }
+    
+    header nav ul li a.activo{
+        color: #000;
+    }
+    a.nav-link.barra {
+        font-size: 20px;
+    }
+    /*/navbar*/
+}
 
 @media screen and (max-width:770px){   
     #carousel {
@@ -842,16 +853,24 @@ h1.app {
     }
     #inter-movil {
         display: flex;
-        padding: 200px 0;
+        padding: 153px 0 137px 0;
         z-index: auto !important;
         background: rgba(34, 34, 34, .5) !important;
         background-size: cover;
+    }
+
+    .nav-oculto-movil {
+        display: flex;
     }
 } 
 @media screen and (max-width:765px){  
     .brand-app {
        padding-bottom: 70px;
    }
+   header #btn-menu:checked ~ .menu-responsive {
+    margin: 0px -0;
+    padding: 171px 0;
+}
    .img-app {
     position: inherit;
     }
@@ -926,13 +945,43 @@ h1.app {
    
     
 }
-@media screen and (max-width:450px){  
 
+@media screen and (max-width:480px){
+    .errores{
+        margin-left: 190px;
+    }
+    .botonesCatalogo {
+        background-color: transparent;
+        border: 2px solid #0069A6;
+        color: #0069A6;
+        padding: 7px 12px;
+        margin: 6px 3px;
+        cursor: pointer;
+        width: 100%;
+        margin-left: -22px;
+    }
+    li.boton {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+}
+@media screen and (max-width:450px){  
+    #refacciones {
+        z-index: 1;
+        background: linear-gradient( rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.5) ), url(../images/Trailer_Precedent_5Row.jpg) no-repeat;
+        background-size: cover;
+        padding: 165px 0 137px 0;
+    }
     a.nav-link {
         color: black;
         font-weight: 700;
         font-size: 15px;
         padding: 10px;
+    }
+    header #btn-menu:checked ~ .menu-responsive {
+        margin: 0px -0;
+        padding: 122px 0;
     }
     .margen-movil2 {
         padding: 69px 0 0 0;
@@ -942,6 +991,14 @@ h1.app {
     }
     .seccion2 {
         padding: 0px 0 70px 0;
+    }
+
+    .barra-movil {
+        font-size: 14px;
+        padding: 0;
+    }
+    a.nav-link.barra {
+        font-size: 18px;
     }
 }
 
@@ -961,4 +1018,7 @@ h1.app {
     font-size: 1.2em;
     font-weight: 600;
     margin-top: 20px;
+}
+
+@media screen and (max-width:375px){   
 }
