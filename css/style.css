@@ -342,6 +342,8 @@ img.img-normal {
 p.gray {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
+    padding-bottom: 20px;
+ 
     
 }
 
@@ -373,6 +375,8 @@ h5.app {
 .img-app {
     position: absolute;
     bottom: 0px;
+    max-width: 100%;
+    height: auto;
     
 }
 
@@ -964,6 +968,13 @@ h1.app {
     list-style: none;
     display: inline-block;
     width: 100%;
+}
+p.gray {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 20px;
+    text-align: justify;
+    
 }
 }
 @media screen and (max-width:450px){  
