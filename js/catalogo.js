@@ -11,9 +11,8 @@ producto1 = {
     'Capacidad de 60,000 BTU/Hr',
     'Diseñado para ahorrar combustible.'],
     imgProducto: 'images/S/prec_s600_500.jpg'
-    
-
 }
+
 producto2 = {
     id: 2,
     nombre:'S-700 PRECEDENT',
