@@ -1,7 +1,7 @@
 'use strict'
 
 $("#owl-products").owlCarousel({
-    items : 5,
+    items : 3,
     slideSpeed : 300,
     paginationSpeed : 400,
     autoPlay: 5000,
@@ -16,24 +16,31 @@ $("#owl-products").owlCarousel({
     singleItem: false
   });
 
-  var filterizd = $('.filtr-container').filterizr({
-    animationDuration: 0.5, // in seconds
-    filter: 'all', // Initial filter 
-    delayMode: 'progressive',
-    controlsSelector: '', // Selector for custom controls
-    easing: "ease-in",    
-    layout: 'sameSize'
-});
-
-
-$(function(){
-  var botones = $(".cont button");
-  botones.click(function() {
-    botones.removeClass('activo');
-    $(this).addClass('activo');
+  $("#owl-green").owlCarousel({
+    items : 1,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    autoPlay: 5000,
+    singleItem: true
   });
-});
 
+
+  /*Magnific popup*/
+  $(document).ready(function() {
+    $('.image-popup-greenmatik').magnificPopup({
+     type: 'image',
+     closeOnContentClick: true,
+     mainClass:'mfp-fade',
+     gallery: {
+     enabled: true,
+     navigateByImgClick: true,
+     preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+     },
+      image: {
+      verticalFit: true,
+    }
+   });
+  });
 //sólo letras
 function validarLetras(e){
   var key = e.keyCode || e.which;

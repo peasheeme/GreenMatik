@@ -1,4 +1,11 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+
 if(isset($_POST['enviar'])){
 		//función para limpiar cada campo que sea introducido por el usuario
 		function limpiarCampo($campo){
@@ -16,7 +23,7 @@ if(isset($_POST['enviar'])){
 		$estado = limpiarCampo($_POST['estado']);
 		$ciudad = limpiarCampo($_POST['ciudad']);
 		$mensaje = limpiarCampo($_POST['mensaje']);
-		$terminos = $_POST['terminos'];
+		$terminos = limpiarCampo($_POST['terminos']);
 
 		//expresiones regulares
 		$er1 = "/^[a-záéóóúàèìòùäëïöüñ\s]+$/i";
@@ -91,60 +98,59 @@ if(isset($_POST['enviar'])){
 		}
 
 		else{
-			//a quién será enviado
-			$destino = "juan_27angel@hotmail.com";
+			$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+			try {
+				//Server settings
+				$mail->SMTPDebug = false;                                 // Enable verbose debug output
+				$mail->isSMTP();                                      // Set mailer to use SMTP
+				$mail->Host = 'smtp.gmail.com; smtp.live.com';  // Specify main and backup SMTP servers smtp1.example.com;smtp2.example.com
+				$mail->SMTPAuth = true;                               // Enable SMTP authentication
+				$mail->Username = 'friocontrolUser@gmail.com';                 // SMTP username
+				$mail->Password = '1234friocontrol';  //1234friocontrol - friocontrolUser@gmail.com                         // SMTP password
+				$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+				$mail->Port = 587;                                    // TCP port to connect to
 
-			//asunto
-			$asunto = "Mensaje enviado desde la página web";
+				//Recipients
+				$mail->setFrom($email, $nombre);
+				$mail->addAddress('info@friocontrol.com', 'Usuario');     // Add a recipient - a quién se le va a enviar
+				//$mail->addReplyTo($email, 'juan.hdz.antopia@gmail.com');
 
-			//cabeceras para el envío del mail en formato html
-			$headers = "MIME-Version: 1.0"."\r\n";
-			$headers.= "Content-type: text/html; charset=UTF-8\r\n";
-
-			//contenido del mensaje
-			$contenido = '
-				<!DOCTYPE html>
-				<html lang="es">
-				<head></head>
-				<body>
-					<h2>'.$nombre.' ha enviado el siguiente mensaje a través de tu sitio web:</h2>
-				
-					<p>'.$mensaje.'</p>
+				//Content
+				$mail->isHTML(true);                                  // Set email format to HTML
+				$mail->Subject = 'Asunto muy importante';
+				$mail->Body = '
+					<p>
+						<h1>Mensaje de la página web</h1>
+						
+						<p style="font-size:20px;">'.$mensaje.'</p>
+					</p>
+					
+					<p style="font-size:20px;">
+						Puedes ponerte en contacto con <strong>'.$nombre.'</strong> al correo: '.$email.'
+						o al teléfono: '.$telefono.'
+					</p>
 
 					<ul>
-						<li>'.$ciudad.'</li>
-						<li>'.$estado.'</li>
+						<li style="font-size:20px;">Estado: '.$estado.'</li>
+						<li style="font-size:20px;">Ciudad: '.$ciudad.'</li>
 					</ul>
-			
-					<p>Contacta a  '.$nombre.' al correo:  <span style="color:blue;"> '.$email.'</span> o al télefono: '.$telefono.' </p>
-					
-					<p>Ir a mi sitio web <span style="color:blue">http://www.friocontrol.com/</span></p>
-				</body>
-				</html>
-			';
+				';
 
-			//envío de mail
-			$envio = mail($destino, $asunto, $contenido, $headers);
+				$mail->SMTPOptions = array('ssl' => array(
+						'verify_peer' => false,
+						'verify_peer_name' => false,
+						'allow_self_signed' => true
+					)
+				);
 
-			if($envio){
-				header("Location: gracias.php");
-
-				//enviando autorespuesta
-				$pfw_header = "From: tucorreo@mail.comn"
-				. "Reply-To: tucorreo@mail.comn";
-				$pfw_subject = "Mensaje recibido";
-				$pfw_email_to = "$correo";
-				$pfw_message = "Muchas Gracias $nombre, por su mensaje: $mensaje"
-				. "Su mensaje ha sido recibido satisfactoriamente. n"
-				. "Nos pondremos en contacto contigo lo antes posible en su e-mail: $correo n"
-				. " n"
-				. " n"
-				. "--------------------------------------------------------------------------n"
-				. "Favor de NO responder este E-mail ya que es generado Automaticamente.n";
-				@mail($pfw_email_to, $pfw_subject ,$pfw_message ,$pfw_header );
-
-			}else{
-				header("Location:../contacto.php?error=Inténtelo de nuevo en unos momentos");
+				if($mail->send()){
+					header("Location:gracias.php");
+				}else{
+					header("Location:../contacto.php?error=*Error al enviarlo, Inténtelo de nuevo en unos momentos");
+				}
+				
+			} catch (Exception $e) {
+				header("Location:../contacto.php?error=*Error al enviarlo, Inténtelo de nuevo en unos momentos", $mail->ErrorInfo);
 			}
 		}
 	}

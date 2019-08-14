@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Subir productos</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<link rel="shortcut icon" type="image/png" href="images/icons/fav.png"/>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700" rel="stylesheet">
+    
+<link rel="stylesheet" href="../css/hamburgers.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<section class="insert-product" style="margin: 70px 0;">
+		<div class="container">
+			<h1 style="color: #0069A6"> Subir productos</h1>
+				<form action="insertar.php" method="POST" enctype="multipart/form-data">
+
+					<p>
+						<div class="form-group">
+							<input type="text"  class="form-control" name="nombre" placeholder="Titulo del producto  " required>
+						</div>
+					</p>
+					
+					<p>
+						<div class="form-group">
+							<textarea class="form-control" id="" cols="30" rows="15" name="contenido" rows="7" placeholder="Contenido"></textarea>
+						</div>
+					</p>
+					<p>
+						<input type="file" name="imagenes" id="" required>
+					</p>
+					<p>
+						<div class="col-xs-12 col-md-12  form-group "  >
+									<select class="thermo-form" id="" name="categoria" placeholder="Categoría " style="margin-left: -16px; padding: 10px 5px; border-radius: 4px;	">
+										<option value="">Categoría</option>
+										<option value="camionesGrandes">TÚNEL DE LAVADO</option>
+										<option value="camionesPeq">PUENTE DE LAVADO</option>
+										<option value="apu">ACCESORIOS</option>
+										<option value="otros">PRODUCTO QUÍMICO CERTIFICADO</option>
+									
+									</select>
+									
+								</div>
+					</p>
+					
+						<input type="submit" value="Subir" style="    background-color: #0069A6;
+						border: 2px solid #0069A6;
+						color: white;
+						height: 55px;
+						width: 190px;
+						cursor: pointer;">
+					
+				</form>
+		</div>
+	</section>
+</body>
+</html>

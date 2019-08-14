@@ -43,8 +43,8 @@
 
 
 <?php
-echo '<META HTTP-EQUIV="Refresh" Content="3; URL=../contacto.php">';    
-exit;
+	echo '<META HTTP-EQUIV="Refresh" Content="3; URL=../contacto.php">';    
+	exit;
 ?>
 </body>
 </html>
