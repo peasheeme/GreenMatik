@@ -20,7 +20,7 @@
                 </h1>
                
                 <p class="white mt-10 mb-50">En Greenmatik haremos realidad tus sueños a toda máquina, aplicando en todos nuestros procesos los valores que nos definen. </p>
-                    <div>
+                    <div >
                     <a href="contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
              <a href="contacto.php"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
                     </div>
@@ -32,12 +32,15 @@
  <section class="bg-white ">
      <div class="container">
          <div class="row text-left " >
-                    <div class="col-xs-12 col-sm-12 col-lg-6 left " >
+                    <div class="col-xs-12 col-sm-12 col-lg-6 left" >
+                    <div class="col-xs-12  left mostrar-row-md" >
+                     <img src="images/callto.png" alt="GreenMatic" class="mb-50 " >
+                    
+                     </div>
                     <h2 class="nosotros2">  <span class="blue"> Acerca de Nosotros</span> </h2>
                         
                            <p class="gray mt-10 mont">Somos la primera empresa Mexicana que diseña y ofrece a sus clientes los mejores equipos de lavado automatizado de vehículos para México y Latinoamérica.
-
-Los equipos GreenMatik son ensamblados en China en sinergia con el fabricante más innovador de Asia, que tras 30 años de investigación continua para el desarrollo de nuevas tecnologías aplicadas a la fabricación de túneles y puentes de lavado confiables y funcionales, le permitió obtener en 2016 la Certificación internacional ISO 9001.</p>
+                            Los equipos GreenMatik son ensamblados en China en sinergia con el fabricante más innovador de Asia, que tras 30 años de investigación continua para el desarrollo de nuevas tecnologías aplicadas a la fabricación de túneles y puentes de lavado confiables y funcionales, le permitió obtener en 2016 la Certificación internacional ISO 9001.</p>
                      </div>
 
                      <div class="col-xs-12 col-sm-6 col-lg-6  left ocultar-row-md" >

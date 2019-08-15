@@ -151,14 +151,14 @@ box-shadow: 0px 13px 38px -16px rgba(20,148,71,1);
  
 .btn-blanco {
     height: 45px;
-    width: 160px;
+    width: 140px;
      background: white;
      color:#0069A6;
 
  }
  .btn-border-white {
     height: 45px;
-    width: 160px;
+    width: 140px;
      border:2px solid white;
      background: transparent;
      color:white;
@@ -222,7 +222,20 @@ box-shadow: 0px 13px 38px -16px rgba(20,148,71,1);
     width: 160px;
     height: 45px;
     
-    margin: 70px 0 0 0;
+    margin-top: 70px;
+    
+    cursor: pointer;
+
+}
+.btn-ver-catalogo-refacciones {
+    color: white;
+    border: 2px solid #149447;
+    background: #149447; 
+    width: 160px;
+    height: 45px;
+    
+    margin-top: 70px;
+    margin-left: 15px;
     cursor: pointer;
 
 }
@@ -838,7 +851,7 @@ a.contacto-tel {
  footer {
     background: #333333;
     
-    padding: 40px 0 0 0;
+    padding: 40px 0;
     color: white;
  }
  h2.footer {
@@ -876,15 +889,15 @@ a.contacto-tel {
     display: none;
     margin-top: -40px;
 }
-
+.mostrar-row-md {
+    display: none;
+}
  /*footer {
      position: absolute;
      bottom: -350px;
      width: 100%;
  }*/
- .sucursales-footer {
-     padding-left: 25px;
- }
+ 
  .margen-movil2 {
     padding: 90px 0 0 0;
 }
@@ -978,12 +991,23 @@ h1.app {
 
 }
 @media screen and (max-width:992px){
+    .copy-oculto {
+        display: none;
+    }
+    .copy-mostrar {
+        display: inline-block;
+        margin-top: -40px;
+    }
+    .ocultar-row-md {
+        display: none;
+    }
+    .mostrar-row-md {
+        display: block;
+    }
     .nosotros-lg {
         display: none;
     } 
-    .nosotros-md{
-        display: block;
-    }   
+     
     .mostrar-movil {
         display: block;
     }
@@ -1047,9 +1071,9 @@ h1.app {
     .p.copy {
         margin-top: 10px;
     }
-    .copy-mostrar {
-        display: inline-block;
-        margin-top: -40px;
+    
+    .copy-ocultar {
+        display: none;
     }
     h1.titulo-carousel {
         font-size: 23px;
@@ -1072,9 +1096,7 @@ h1.app {
         margin-top: 10px;
         cursor: pointer;
     }
-    .copy-oculto {
-        display: none;
-    }
+   
 }
 @media screen and (max-width:800px){
     /*navbar*/
@@ -1163,9 +1185,7 @@ h1.app {
     .nosotros-md{
         display: none;
     } 
-    .ocultar-row-md {
-        display: none;
-    }
+   
     .brand-app {
        padding-bottom: 70px;
    }
@@ -1209,7 +1229,11 @@ h1.app {
     }
  }
 
-@media screen and (max-width:569px){  
+@media screen and (max-width:569px){ 
+    
+    .ocultar-caracteristicas {
+        display: none;
+    }
   
     .img-button {
         justify-content: center;
@@ -1253,6 +1277,8 @@ h1.app {
 }
 
 @media screen and (max-width:480px){
+  
+    
     .categoryItem {
         
         width: 100%;
@@ -1282,7 +1308,7 @@ h1.app {
         font-size: 14px;
         font-family: 'Montserrat', sans-serif;
         padding-bottom: 20px;
-        text-align: justify;
+        
     }
 }
 @media screen and (max-width:450px){  
@@ -1290,7 +1316,7 @@ h1.app {
         z-index: 1;
         background: linear-gradient( rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.5) ), url(../images/Trailer_Precedent_5Row.jpg) no-repeat;
         background-size: cover;
-        padding: 165px 0 137px 0;
+        padding: 90px  0;
     }
     a.nav-link {
         color: black;
@@ -1300,7 +1326,7 @@ h1.app {
     }
     header #btn-menu:checked ~ .menu-responsive {
         margin: 0px -0;
-        padding: 122px 0;
+        padding: 65px 0;
     }
     .margen-movil2 {
         padding: 69px 0 0 0;
@@ -1344,3 +1370,14 @@ h1.app {
         font-size: 0.8em;
     }
 }
+@media screen and (max-width:330px){  
+  .btn-border-white  {
+      width: 100%;
+  }
+
+  .btn-blanco{
+      width: 100%;
+      margin: 20px 0 10px 0;
+  }
+}
+

@@ -39,12 +39,12 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/bg1.png" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1 class="titulo-carousel">Mejora y ahorra costos</h1>
+                        <h1 class="titulo-carousel">Mejora tu equipo y ahorra costos</h1>
                         <p class="white">Conoce nuestra increíble línea de productos 100% <br>   Mexicana diseñada para cuidar el medio ambiente y cuidar tu bolsillo.
 </p>
                         <div>
                         <a href="contacto.php"><button class="btn btn-border-white mont">Contáctanos</button></a>
-             <a href="catalogo.php"><button class="btn btn-blanco ml-10 mont"><strong>Catálogo</strong></button></a>
+                         <a href="catalogo.php"><button class="btn btn-blanco ml-10 mont"><strong>Catálogo</strong></button></a>
                         </div>     
                     </div>
                 </div>
@@ -76,13 +76,13 @@
 
     <section id="inter-movil">
         <div class="container">
-            <h2 class="rotate "style="color: #fff;"><strong>Distribuidor Autorizado Thermo King | Amplia zona de 
-                    cobertura en México | ¡Descarga nuestra App gratuita!</strong></h2>
+            <h3 class="rotate mont "style="color: #fff; font-weight:700"><strong>Invierte en un Negocio Rentable | Autolavado Llave en mano | 
+                ¡Mejora tu equipo y ahorra costos</strong></h3> <br>
               
-                <div class="row justify-content-start">
-                    
-                <a href="contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
+               
+               <a href="contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
              <a href="contacto.php"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
+               </div>
                 </div> 
         </div> 
     </section>
@@ -234,7 +234,7 @@
                    <div class="col-xs-12 col-md-2"></div>
                </div>
 
-               <div class="row mt-50 mb-50">
+               <div class="row mt-50 mb-50 ocultar-caracteristicas">
                    <div class="col-xs-6 col-sm-6 col-md-2 mt-10">
                        <div class="media">
                          <img class=" mt-0 mr-2" src="images/icons/catalogo-01.png" width="40" alt="Generic placeholder image">
@@ -309,19 +309,18 @@
                             <p class="item-description">Unidad de alto rendimiento Compresor reciprocarte X214 Control LED cabina de fácil ...</p>
                      </div>
  
+                     <div class="item-carousel">
+                      <a href="catalogo.php"> <img src="images/T/T-1080 SPECTRUM MULTI-TEMP.jpg" alt="">
+                            <h5 class="item-title mont" >T-1080 SPECTRUM MULTI-TEMP</h5></a>
+                            <p class="item-description">Unidad de alto rendimiento Compresor reciprocarte X214 Control LED cabina de fácil ...</p>
+                     </div>
 
 
-                         <div class="item-carousel">
-                         <a href="catalogo.php"> <img src="images/V/C-450E.png" alt="">
-                         <div class="text-item">
-                                <h6 class="nombreProducto mont"> <strong> TSUNAMI 360 - 4D</strong></h6>
-                                <p >FREE TOUCH - PUENTE DE LAVADO</p>
+                     
+                     
 
-                                <p class="light">LAVADO FREE TOUCH <br>
-                                FÁCIL OPERACIÓN <br>  
-                                BAJO COSTE DE MANTENIMIENTO</p>
-                            </div>
                       
+                     </div>
             </div>
 
             <div class="row justify-content-center">

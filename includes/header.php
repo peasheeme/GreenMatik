@@ -19,17 +19,17 @@
     </ul>
 </nav>
 
-<nav class="navbar justify-content-center nav-oculto-movil " style="background: #0069A6; color: white; ">
+<nav class="navbar justify-content-center nav-oculto-movil " style="background: #149447; color: white; ">
                                        
                         <ul class="nav justify-content-center">
+                                <!-- <li class="nav-item">
+                                  <a class="nav-link   " href="#" style="color:white"> <i class="far fa-clock"style="color:white" ></i> <span class="barra-movil" >24/7</span></a>
+                                </li> -->
                                 <li class="nav-item">
-                                  <a class="nav-link   " href="#" style="color:white"> <i class="far fa-clock"style="color:#9ACAEB" ></i> <span class="barra-movil" >24/7</span></a>
+                                  <a class="nav-link " href="tel:018001347336" style="color:white"><i class="fas fa-phone"style="color:white"></i> <span class="barra-movil">Llamar</span> </a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link " href="tel:018001347336" style="color:white"><i class="fas fa-phone"style="color:#9ACAEB"></i> <span class="barra-movil">Llamar</span> </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link "  href="ventas@greenmatik.com"  style="color:white"><i class="fas fa-envelope"style="color:#9ACAEB"></i> <span class="barra-movil">Correo interno</span></a>
+                                  <a class="nav-link "  href="ventas@greenmatik.com"  style="color:white"><i class="fas fa-envelope"style="color:white"></i> <span class="barra-movil">Correo interno</span></a>
                                 </li>
                                
                                 

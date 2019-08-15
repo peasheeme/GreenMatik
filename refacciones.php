@@ -32,7 +32,7 @@ contamos con entrega inmediata en refacciones.</p>
     <section class="producto">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-lg-6">
                                          
                         <h3 class="blue2"><strong>Entrega inmediata, listo para atender cualquier necesidad tanto para equipo GreenMatik como para otras Marcas.</strong></h3> <br>
                         <h4><strong>Envíos a todo México</strong></h4> <br>
@@ -41,10 +41,10 @@ contamos con entrega inmediata en refacciones.</p>
                         <p class="gray mont"> Contamos con las refacciones necesarias para que tu equipo GreenMatik nunca deje de funcionar. Solicítalo con tu vendedor o contáctanos aquí para la cotización y entrega de cualquier refaccion que necesites. </p>
                
                         <div class="row">
-                            <a href="contacto.php" class="btn btn-ver-catalogo mont">Contáctanos</a>
+                            <a href="contacto.php" ><button class="btn btn-ver-catalogo-refacciones mont">Contáctanos</button> </a>
                         </div>
                 </div>
-                <div class="col-xs-12 col-md-6 img-refaccion text-center">
+                <div class="col-xs-12 col-lg-6 img-refaccion text-center">
                         <div id="owl-refacciones" class="owl-carousel wow ">
                             <?php
                                 include('php/conexion.php');

@@ -5,35 +5,36 @@
                 <h2 class="footer"> <strong>GREENMATIK</strong> </h2>
                 <p>Somos una empresa dedicada a dar soluciones de autolavado de vehículos, venta de equipo, refacciones, accesorios y productos de limpieza. 
 Un autolavado es un negocio rentable, invierte ahora y haremos realidad tus sueños a toda máquina. Pregunta por nuestras soluciones de negocio. </p>
-               <br> © Copyright 2019 GREENMATIK, Todos los derechos reservados. <br>
-               <p class="copy copy-oculto"><a class="footer-link" href="aviso-privacidad.html">Aviso de Privacidad </a> |  <a  class="footer-link " href="http://www.3e-digital.com/"  target="_blank"> Sitio web diseñado por 3e-Digital </a>
+              
+               <p class="copy copy-oculto"><a class="footer-link" href="aviso-privacidad.html"> <br> © Copyright 2019 GREENMATIK, Todos los derechos reservados. <br>Aviso de Privacidad </a> |  <a  class="footer-link " href="http://www.3e-digital.com/"  target="_blank"> Sitio web diseñado por 3e-Digital </a>
                 </p>
             </div>
             <div class="col-6 col-sm-6 col-lg-3">
-                <h6>CONTÁCTANOS</h6>
+                <h6><strong>CONTÁCTANOS</strong></h6>
                 <a class="footer-link" > <i class="fas fa-phone dos"></i> <span style="font-family: 'Raleway', sans-serif;"><strong>TELÉFONOS</strong> </span> </a> <br>
                 <a  class="mostrar margen-movil" href="tel:018001347336"><span class="sucursales-footer">01 800 134 7336</span> </a> <br>
                   <a class="footer-link" >  <i class="fas fa-envelope dos"></i> <span style="font-family: 'Raleway', sans-serif;"><strong>E-MAIL</strong> </span> </a> <br>
-                <a class="mostrar footer-link" href="mailto:ventas@greenmatik.com"> <span class="sucursales-footer">ventas@greenmatik.com</span> </a> <br>
-                <a class="footer-link" > <i class="fas fa-map-marker-alt dos"></i> <strong>UBICACIÓN</strong></a> <br>
-                <a class="footer-link" href="#"> <span class="sucursales-footer">lorem ipsum dolor</span> </a> <br>
+                <a class=" footer-link" href="mailto:ventas@greenmatik.com"> <span class="sucursales-footer">ventas@greenmatik.com</span> </a> <br>
+                             
+                <a class="footer footer-link" > <i class="fas fa-map-marker-alt dos"></i> <strong>UBICACIÓN</strong></a> <br>
+                <a class="footer-link mt-20" href="#"> <span class="sucursales-footer">lorem ipsum dolor</span> </a> <br>
                
                                  
                 <a class="oculto link" href="tel:">
                 <i class="fas fa-phone dos"></i> </a>
                 <br>
-                <a class="oculto link" href="mailto:ventas@greenmatik.com"> <i class="fas fa-envelope dos"></i>  ventas@greenmatik.com </a><br> <br>              
+               
             </div>
     
             <div class="col-6 col-sm-6 col-lg-3 ">
-                <h6 >MENÚ</h6>
+                <h6 ><strong>MENÚ</strong> </h6>
                 <a class="footer-link activo" href="index.html"><span >INICIO</span></a> <br>
                 <a class="footer-link" href="servicios"><span >SERVICIOS </span></a> <br>
                 <a class="footer-link" href="portafolio.html"><span>CATÁLOGO DE PRODUCTOS</span></a><br>
                 <a class="footer-link" href="refacciones.html"><span>REFACCIONES</span></a><br>
                 <a class="footer-link" href="nosotros.html"><span>NOSOTROS</span></a><br>
                 <a class="footer-link" href="faq.html"><span>PREGUNTAS FRECUENTES</span></a><br>
-                <a class="footer-link" href="contacto.php"><span>CONTACTO</span></a> 
+                <a class="footer-link mb-20" href="contacto.php"><span class="">CONTACTO</span></a> 
                 <!-- <h6 class=" margen-movil2  "><strong>SÍGUENOS</strong></h6>
                 <a class="mostrar footer-link" href="/" target="_blank"> <i class="fab fa-facebook-f dos  "> </i> @friocontrol </a>
                 <h6 class="oculto margen-movil2  "><strong>SÍGUENOS</strong></h6>
@@ -42,8 +43,8 @@ Un autolavado es un negocio rentable, invierte ahora y haremos realidad tus sue�
     
                            
         </div>
-                        
-        <p class=" copy-mostrar"> <br> Copyright © GREENMATIK 2019, Todos los derechos reservados. <br><a class="footer-link" href="aviso-privacidad.html">Aviso de Privacidad </a>  | 
+                        <br><br>
+        <p class=" copy-mostrar "> <br> Copyright © GREENMATIK 2019, Todos los derechos reservados. <br><a class="footer-link" href="aviso-privacidad.html">Aviso de Privacidad </a>  | 
         	<a  class="footer-link "  href="http://www.3e-digital.com/" target="_blank"> Sitio web diseñado por 3e-Digital </a>
         </p>
     </div>      
