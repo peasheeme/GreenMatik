@@ -464,6 +464,12 @@ h1 {
 }
 
 /*-----------NOSOTROS----------*/
+.nosotros-lg {
+    display: block;
+} 
+.nosotros-md{
+    display: none;
+} 
 .bg-white {
     padding:70px 0 70px 0;
     background: #ffffff;
@@ -608,12 +614,13 @@ h5.app {
     padding-bottom: 140px;
 }
 
-.img-app {
-    position: absolute;
-    bottom: 0px;
-    max-width: 100%;
-    height: auto;
+.mostrar-md{
+    display: none;
 }
+.mostrar-movil , .mostrar-callto-md {
+    display: none;
+}
+
 
 .button-app {
     max-width: 100% ;
@@ -743,6 +750,9 @@ ul.lista-refacciones {
     padding-top: 00px;
 }
 /*---------CONTACTO ----------*/
+.ocultar-row-md {
+    display: block;
+}
 #contacto {
     z-index: 1;
     background: url("../images/bg2.jpg") no-repeat ;
@@ -886,6 +896,25 @@ p.copy {
  .terminos {
      padding: 70px 0 0 0;
  }
+ @media screen and (max-width:1317px){  
+   #app {
+       background: #0069A6;
+   } 
+   .mostrar-md {
+       display: block;
+   }
+   .bg-callto {
+       background: #0069a3;
+       padding: 70px 0;
+   }
+   .mostrar-callto-md {
+    display: block;
+   }
+   .bg-callto2 {
+    background: #0069a3;
+    padding: 70px 0; 
+   }
+ }
 
  @media screen and (max-width:1270px){  
     .img-app {
@@ -948,7 +977,19 @@ h1.app {
     
 
 }
-@media screen and (max-width:992px){  
+@media screen and (max-width:992px){
+    .nosotros-lg {
+        display: none;
+    } 
+    .nosotros-md{
+        display: block;
+    }   
+    .mostrar-movil {
+        display: block;
+    }
+    .mostrar-md {
+        display: none;
+    }
 
     p.copy {
         margin-top: 11px;
@@ -1100,7 +1141,8 @@ h1.app {
     /*/navbar*/
 }
 
-@media screen and (max-width:770px){   
+@media screen and (max-width:770px){  
+   
     #carousel {
          display: none;
     }
@@ -1117,7 +1159,13 @@ h1.app {
         display: flex;
     }
 } 
-@media screen and (max-width:765px){  
+@media screen and (max-width:767px){  
+    .nosotros-md{
+        display: none;
+    } 
+    .ocultar-row-md {
+        display: none;
+    }
     .brand-app {
        padding-bottom: 70px;
    }

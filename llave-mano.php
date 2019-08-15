@@ -105,8 +105,10 @@
  <section class="bg-callto2">
     <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-md-7"></div>
-        <div class="col-xs-12 col-md-5"> 
+        <div class="col-xs-12 col-lg-7">
+        <img src="images/callto-sm.png" alt="GreenMatic" class="mostrar-callto-md mb-20 mt-10" >
+        </div>
+        <div class="col-xs-12 col-lg-5"> 
             <h2 class="callto-title">  <span class="white"> Con GreenMatik estas a un paso de ser dueño de un autolavado rentable.</span> </h2>
             <p class="white mt-20 mb-50"> 
             Contáctanos a través de nuestros teléfonos o correo electrónico y comienza la planeación de tu propio autolavado.</p>

@@ -90,8 +90,10 @@ Además de sentirte permanentemente apoyado por nuestros técnicos y asesores de
  <section class="bg-callto2">
     <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-md-7"></div>
-        <div class="col-xs-12 col-md-5"> 
+        <div class="col-xs-12 col-lg-7">
+        <img src="images/callto-sm.png" alt="GreenMatic" class="mostrar-callto-md mb-20 mt-10" >
+        </div>
+        <div class="col-xs-12 col-lg-5"> 
             <h2 class="callto-title">  <span class="white"> A tu disposición cuando nos necesites.</span> </h2>
             <p class="white mt-20 mb-50">Nuestra asistencia es integral y permanente. 
                 Por teléfono, mail y asistencia virtual. <br> <br>

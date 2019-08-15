@@ -85,7 +85,9 @@
  <section class="bg-callto2">
     <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-md-7"></div>
+        <div class="col-xs-12 col-md-7">
+        <img src="images/callto-md.png" alt="GreenMatic" class="mostrar-callto-md mb-20" >
+        </div>
         <div class="col-xs-12 col-md-5"> 
             <h2 class="callto-title">  <span class="white"> A tu disposición cuando nos necesites.</span> </h2>
             <p class="white mt-20 mb-50">Nuestra asistencia es integral y permanente. 

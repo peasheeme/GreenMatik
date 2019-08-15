@@ -32,7 +32,7 @@
  <section class="bg-white ">
      <div class="container">
          <div class="row text-left " >
-                    <div class="col-xs-12 col-sm-6 col-lg-6 left " >
+                    <div class="col-xs-12 col-sm-12 col-lg-6 left " >
                     <h2 class="nosotros2">  <span class="blue"> Acerca de Nosotros</span> </h2>
                         
                            <p class="gray mt-10 mont">Somos la primera empresa Mexicana que diseña y ofrece a sus clientes los mejores equipos de lavado automatizado de vehículos para México y Latinoamérica.
@@ -40,8 +40,9 @@
 Los equipos GreenMatik son ensamblados en China en sinergia con el fabricante más innovador de Asia, que tras 30 años de investigación continua para el desarrollo de nuevas tecnologías aplicadas a la fabricación de túneles y puentes de lavado confiables y funcionales, le permitió obtener en 2016 la Certificación internacional ISO 9001.</p>
                      </div>
 
-                     <div class="col-xs-12 col-sm-6 col-lg-6  left " >
-                        
+                     <div class="col-xs-12 col-sm-6 col-lg-6  left ocultar-row-md" >
+                     <img src="images/callto.png" alt="GreenMatic" class="mb-50 nosotros-lg" >
+                     <img src="images/callto-md.png" alt="GreenMatic" class=" mt-50 mb-50 nosotros-md" >
                      </div>
                      <div class="col-xs-12 col-sm-6 col-lg-6  left " >
                         <div class="media">

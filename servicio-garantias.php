@@ -123,8 +123,10 @@ Adicionalmente, en los túneles y puentes de lavado es posible ampliar la cobert
  <section class="bg-callto2">
     <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-md-7"></div>
-        <div class="col-xs-12 col-md-5"> 
+        <div class="col-xs-12 col-lg-7">
+        <img src="images/callto.png" alt="GreenMatic" class="mostrar-callto-md mb-20" >
+        </div>
+        <div class="col-xs-12 col-lg-5"> 
             <h2 class="callto-title">  <span class="white"> Adquiere nuestros
 equipos ahora!</span> </h2>
             <p class="white mt-20 mb-50">En GreenMatik sabemos que tu negocio es importante, por ello te ofrecemos 

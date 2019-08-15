@@ -196,14 +196,16 @@
     <section id="app">
 
         <div class="container">
-
+       
             <div class="row">
-                <div class="col-xs-12 col-md-6">
+                
                     
-                    <div class="col-xs-12 col-sm-6 " >
+                    <div class="col-xs-12 col-md-12 col-lg-6 " >
+                    <img src="images/icons/medioambiente-md.png" alt="" class="mt-20 mostrar-md">
+                    <img src="images/icons/medioambiente-movil.png" alt="" class="mt-20 mostrar-movil mb-20">
                     </div>
-               </div>
-                <div class="col-xs-12 col-md-6 " data-aos="fade-left" data-aos-duration="3000">
+               
+                <div class="col-xs-12 col-md-12 col-lg-6 " data-aos="fade-left" data-aos-duration="3000">
                 <h2 class="app">Minimizando el impacto de la huella hídrica</h2>
                 <h5><strong>El agua es un elemento imprescindible para la limpieza, pero ¡Hay que hacer un uso responsable de ella!</strong> </h5>
                  <h6><strong>Ahorra hasta 90% de Agua</strong></h6>
@@ -233,7 +235,7 @@
                </div>
 
                <div class="row mt-50 mb-50">
-                   <div class="col-xs-6 col-md-2 mt-10">
+                   <div class="col-xs-6 col-sm-6 col-md-2 mt-10">
                        <div class="media">
                          <img class=" mt-0 mr-2" src="images/icons/catalogo-01.png" width="40" alt="Generic placeholder image">
                         <div class="media-body">
@@ -241,7 +243,7 @@
                              </div>
                         </div><!--wnd media -->
                 </div><!--end col -->
-                <div class="col-xs-6 col-md-2 mt-10">
+                <div class="col-xs-6 col-sm-6 col-md-2 mt-10">
                        <div class="media">
                          <img class=" mt-0 mr-2" src="images/icons/catalogo-02.png" width="40" alt="Generic placeholder image">
                         <div class="media-body">
@@ -249,7 +251,7 @@
                              </div>
                         </div><!--wnd media -->
                 </div><!--end col -->
-                <div class="col-xs-6 col-md-2 mt-10">
+                <div class="col-xs-6 col-sm-6 col-md-2 mt-10">
                        <div class="media">
                          <img class=" mt-0 mr-2" src="images/icons/catalogo-03.png" width="40" alt="Generic placeholder image">
                         <div class="media-body">
@@ -257,7 +259,7 @@
                              </div>
                         </div><!--wnd media -->
                 </div><!--end col -->
-                <div class="col-xs-6 col-md-2 mt-10">
+                <div class="col-xs-6 col-sm-6 col-md-2 mt-10">
                        <div class="media">
                          <img class=" mt-0 mr-2" src="images/icons/catalogo-04.png" width="40" alt="Generic placeholder image">
                         <div class="media-body">
@@ -265,7 +267,7 @@
                              </div>
                         </div><!--wnd media -->
                 </div><!--end col -->
-                <div class="col-xs-6 col-md-2 mt-10">
+                <div class="col-xs-6 col-sm-6 col-md-2 mt-10">
                        <div class="media">
                          <img class=" mt-0 mr-2" src="images/icons/catalogo-05.png" width="40" alt="Generic placeholder image">
                         <div class="media-body">
@@ -273,7 +275,7 @@
                              </div>
                         </div><!--wnd media -->
                 </div><!--end col -->
-                <div class="col-xs-6 col-md-2 mt-10">
+                <div class="col-xs-6 col-sm-6 col-md-2 mt-10">
                        <div class="media">
                          <img class=" mt-0 mr-2" src="images/icons/catalogo-06.png" width="40" alt="Generic placeholder image">
                         <div class="media-body">
@@ -319,12 +321,7 @@
                                 FÁCIL OPERACIÓN <br>  
                                 BAJO COSTE DE MANTENIMIENTO</p>
                             </div>
-                          </div>
-
-                         
-                           
-   
-                  
+                      
             </div>
 
             <div class="row justify-content-center">
@@ -338,7 +335,9 @@
     <section class="bg-callto">
     <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-md-7"></div>
+        <div class="col-xs-12 col-md-7">
+            <img src="images/callto.png" alt="GreenMatic" class="mostrar-callto-md mb-20" >
+        </div>
         <div class="col-xs-12 col-md-5"> 
             <h2 class="callto-title">  <span class="white"> ¿Deseas más  información? </span> </h2>
             <p class="white mt-20 mb-50">Llamanos y recibe más información personalizada para iniciar tu propio negocio de autolavado con la ayuda y calidad de GreenMatik.</p>
