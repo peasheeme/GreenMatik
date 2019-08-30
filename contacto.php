@@ -6,14 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Contacto Greenmatik</title>
+
     <!-- Archivos externos -->
-    <?php require_once('includes/archivosExternosCabecera.php'); ?>
+    <?php include 'includes/archivosExternosCabecera.php'; ?>
   </head>
 
   <body>
 
     <!-- header y navbar -->
-    <?php require_once('includes/header.php'); ?>
+    <?php include 'includes/header.php'; ?>
 
 
     <section id="refacciones">
@@ -155,7 +156,7 @@
     </section>
 
     <!-- footer -->
-    <?php require_once('includes/footer.php'); ?>
+    <?php include 'includes/footer.php'; ?>
 
     <!--Validación de formulario con JQuery-->
     <script>
@@ -367,4 +368,5 @@
       </div>
     </div>
   </body>
+
 </html>
