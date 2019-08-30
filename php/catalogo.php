@@ -58,4 +58,21 @@ class Catalogo
             return null;
         }
     }
+
+    public static function insert($data, $file)
+    {
+        try {
+            $conn = new Conexion();
+
+            $nombre    = $conn->scape($data['nombre']);
+            $contenido = $conn->scape($data['contenido']);
+            $imagen    = addslashes(file_get_contents($file['imagenes']['tmp_name']));
+            $categoria = $conn->scape($data['categoria']);
+
+            $query = "INSERT INTO informacion(nombre, contenido, img, categoria) VALUES('$nombre','$contenido', '$imagen', '$categoria')";
+            $conn->exec($query);
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+        }
+    }
 }

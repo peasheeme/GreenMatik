@@ -21,7 +21,9 @@ class Conexion
 
 	public function scape($str)
 	{
-		return $this->conn->real_escape_string($str);
+		return htmlspecialchars(
+			trim($this->conn->real_escape_string($str))
+		);
 	}
 
 	public function close()

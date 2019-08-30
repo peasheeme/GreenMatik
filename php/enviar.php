@@ -157,4 +157,6 @@ if (isset($_POST['enviar'])) {
 	} catch (\Exception $e) {
 		header("Location: ../contacto.php?error=" . $e->getMessage(), $e->getCode());
 	}
+} else {
+	header('Location: ../contacto.php?error=access denied');
 }

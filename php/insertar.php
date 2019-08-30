@@ -1,27 +1,35 @@
 <?php
 
-	include('conexion.php');
+require 'catalogo.php';
 
-	function limpiarCampos($campo){
-		$campo = trim($campo);
-		$campo = htmlspecialchars($campo);
+class Insertar
+{
+	private $data;
+	private $files;
 
-		return $campo;
+	public function __construct($data, $files)
+	{
+		$this->data = $data;
+		$this->files = $files;
+		$this->exec();
 	}
 
-	$nombre = limpiarCampos($_POST['nombre']);
-	$contenido = limpiarCampos($_POST['contenido']);
-	$imagen = addslashes(file_get_contents($_FILES['imagenes']['tmp_name']));
-	$categoria = limpiarCampos($_POST['categoria']);
+	private function exec()
+	{
+		Catalogo::insert($this->data, $this->files);
+	}
+}
 
-	$query = "INSERT INTO informacion(nombre, contenido, img, categoria) VALUES('$nombre','$contenido', '$imagen', '$categoria')";
-	$resultado = $conexion->query($query);
-
-	if($resultado){
+if (isset($_POST)) {
+	try {
+		new Insertar($_POST, $_FILES);
 		echo "datos insertados correctamente";
 		header('Refresh: 2; URL=subirImagenes.html');
-	}else{
-		echo "Hubo errores";
+	} catch (\Exception $e) {
+		echo "Hubo errores <br>";
+		echo $e->getMessage();
 		header('Refresh: 2; URL=subirImagenes.html');
 	}
-?>
+} else {
+	header('Location: subirImagenes.html');
+}
