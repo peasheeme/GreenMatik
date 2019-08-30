@@ -54,11 +54,11 @@
                     <div class="col-xs-12 col-lg-6 img-refaccion text-center">
                         <div id="owl-refacciones" class="owl-carousel wow ">
                             <?php
-                                include('php/conexion.php');
+                                include 'php/catalogo.php';
 
-                                $query3 = "SELECT * FROM informacion where categoria ='otros' ";
-                                $resultado = $conexion->query($query3);
-                                while($row = $resultado->fetch_assoc()):
+                                $resultado = Catalogo::getByCategory('otros');
+
+                                while ($row = $resultado->fetch_assoc()) {
                             ?>
                             <div class="owl-item">
                                 <div class="item-catalogo">
@@ -72,9 +72,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <?php
-                                endwhile;
-                            ?>
+                            <?php } ?>
 
                         </div>
                     </div>

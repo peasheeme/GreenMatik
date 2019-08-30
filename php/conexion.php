@@ -1,13 +1,31 @@
 <?php
 
-try{
-	$conexion = new mysqli("localhost", "root", "", "greenmatik");
+class Conexion
+{
+	private $conn;
 
-	if($conexion){}else{
-		echo "falla en la conexión";
+	public function __construct()
+	{
+		$this->conn = new mysqli("localhost", "root", "", "greenmatik");
 	}
-}
 
-catch(Exception $e){
-	echo "Excepción capturada: ", $e->getMessage(), "\n";
+	public function select($query)
+	{
+		return $this->conn->query($query);
+	}
+
+	public function exec($query)
+	{
+		$this->conn->query($query);
+	}
+
+	public function scape($str)
+	{
+		return $this->conn->real_escape_string($str);
+	}
+
+	public function close()
+	{
+		$this->conn->close();
+	}
 }

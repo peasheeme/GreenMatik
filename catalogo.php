@@ -56,11 +56,11 @@
                     </div>
                     <div class="row filtr-container text-center">
                         <?php
-                            include('php/conexion.php');
+                            include 'php/catalogo.php';
 
-                            $query = "SELECT * FROM informacion ORDER BY RAND()";
-                            $resultado = $conexion->query($query);
-                            while($row = $resultado->fetch_assoc()):
+                            $resultado = Catalogo::getRandom();
+
+                            while($row = $resultado->fetch_assoc()) {
                         ?>
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 filtr-item"
                             category="<?php echo $row['categoria']; ?>">
@@ -76,9 +76,7 @@
                                 </a>
                             </div>
                         </div>
-                        <?php
-                            endwhile;
-                        ?>
+                            <?php } ?>
                     </div>
             </section>
 

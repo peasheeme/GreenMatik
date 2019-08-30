@@ -21,13 +21,9 @@
             <div class="container">
                 <div class="row">
                     <?php
-
-                        include('php/conexion.php');
-                        $id=$_REQUEST['id'];
-
-                        $query = "SELECT * FROM informacion WHERE id = '$id'";
-                        $resultado = $conexion->query($query);
-                        $row = $resultado->fetch_assoc();
+                        include 'php/catalogo.php' ;
+                        $id = $_REQUEST['id'];
+                        $row = Catalogo::getById($id);
                     ?>
                     <div class="col-xs-12 col-md-6">
                         <div class="row align-center">
@@ -228,10 +224,9 @@
                 <h3 class="blue"><strong>OTROS PRODUCTOS RELACIONADOS</strong></h3>
                 <div class="row">
                     <?php
-                    $query = "SELECT * FROM informacion ORDER BY RAND() LIMIT 0,3";
-                    $resultado = $conexion->query($query);
-                    while($row = $resultado->fetch_assoc()):
-                ?>
+                        $resultado = Catalogo::getRandom('0,3');
+                        while ($row = $resultado->fetch_assoc()) {
+                    ?>
                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                         <div class="item-catalogo">
                             <a href="producto.php?id=<?php echo $row['id']; ?>">
@@ -243,9 +238,7 @@
                             </a>
                         </div>
                     </div>
-                    <?php
-                    endwhile;
-                ?>
+                    <?php } ?>
                 </div>
             </div>
         </section>
