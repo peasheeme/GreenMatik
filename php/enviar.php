@@ -131,9 +131,9 @@ class Enviar
 			header("Location:../contacto.php?error='");
 		}
 
-		if (strlen($mensaje) < 5) {
+		if (strlen($this->data['mensaje']) < 5) {
 			throw new \Exception("*Mensaje: Mínimo 5 caracteres", 400);
-		} elseif (strlen($mensaje) > 500) {
+		} elseif (strlen($this->data['mensaje']) > 500) {
 			throw new \Exception("*Mensaje: Máximo 500 caracteres", 400);
 		}
 
