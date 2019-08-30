@@ -17,7 +17,7 @@
 
     <section class="producto">
         <div class="container">
-            <div class="row">         
+            <div class="row">
             <?php
 
                 include('php/conexion.php');
@@ -26,34 +26,34 @@
                 $query = "SELECT * FROM informacion WHERE id = '$id'";
                 $resultado = $conexion->query($query);
                 $row = $resultado->fetch_assoc();
-            ?>   
+            ?>
                 <div class="col-xs-12 col-md-6">
                     <div class="row align-center">
-                         
+
                     </div>
                     <img src="data:image/jpg;base64, <?php echo base64_encode($row['img']); ?>" class=" img-product-ocultar" alt="">
-                    <h6 class="bule2" style="color: #149447; font-weight:700;">MATIK'S SERIES</h6>    
+                    <h6 class="bule2" style="color: #149447; font-weight:700;">MATIK'S SERIES</h6>
                     <h3 class="blue"><strong><?php echo $row['nombre']; ?></strong></h3>
-                    
+
                         <div class="lista-productos">
-                            
+
                             <?php
-                                echo $row['contenido']; 
+                                echo $row['contenido'];
                             ?>
-                            
+
                         </div>
                         <!--Diseñado para ser amigable con el medio ambiente-->
 
                         <div class="row">
-                            <a onclick="history.back();"> <button class="btn btn-productos-claro mont"><h6 ><i class="fas fa-undo"></i> <strong>Regresar</strong></h6></button></a> 
+                            <a onclick="history.back();"> <button class="btn btn-productos-claro mont"><h6 ><i class="fas fa-undo"></i> <strong>Regresar</strong></h6></button></a>
                            <a href="contacto.php"> <button class="btn btn-productos btn-productos-oculto mont"  id="prueba"> <strong>Contáctanos</strong></button></a>
                         </div>
                 </div>
                 <div class="col-xs-12 col-md-6 img-producto">
                     <img src="data:image/jpg;base64, <?php echo base64_encode($row['img']); ?>" class="img-product-mostrar" alt="">
-                </div>     
+                </div>
             </div>
-            
+
         </div>
     </section>
     <section class="productos-relacionados">
@@ -67,7 +67,7 @@
       <th scope="col"></th>
       <th scope="col">EQUIPO</th>
       <th scope="col">TÚNEL DE LAVADO MK5</th>
-    
+
     </tr>
   </thead>
   <tbody>
@@ -75,19 +75,19 @@
       <th scope="row"></th>
       <td>Numero de cepillos</td>
       <td>5</td>
-     
+
     </tr>
     <tr>
       <th scope="row"></th>
       <td>Área de montaje</td>
       <td>70 M2</td>
-     
+
     </tr>
     <tr>
       <th scope="row"></th>
       <td>Unidades por hora</td>
       <td>40 -60</td>
-     
+
     </tr>
   </tbody>
 </table>
@@ -171,9 +171,9 @@
                            <p class="gray mt-10">Instalando un reciclador de agua GreenMatik se puede llegar a reciclar hasta el 90% del agua utilizada en los procesos de lavado, optimizando costes y reduciendo de forma significativa el impacto de la huella hídrica. </p>
                        </a>
                      </div><!--col-end-->
-                     
-                     
-                     
+
+
+
                 </div><!--end row-->
             </div>
             </div>
@@ -195,18 +195,18 @@
                             <a href="producto.php?id=<?php echo $row['id']; ?>">
                                 <img src="data:image/jpg;base64, <?php echo base64_encode($row['img']); ?>" alt="" class="img-fluid imagenProducto">
                                 <div class="text-item">
-                                    <h6 class="nombreProducto"><?php echo $row['nombre']; ?></h6> 
-                                </div> 
+                                    <h6 class="nombreProducto"><?php echo $row['nombre']; ?></h6>
+                                </div>
                             </a>
                         </div>
                     </div>
                 <?php
                     endwhile;
-                ?>                             
-                </div>       
+                ?>
+                </div>
         </div>
     </section>
-              
+
     <!--footer-->
     <?php require_once('includes/footer.php'); ?>
   </body>

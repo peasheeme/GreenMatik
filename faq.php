@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> Preguntas Frecuentes | GreenMatik </title>
     <!-- Archivos externos -->
-    <?php require_once('includes/archivosExternosCabecera.php'); ?>     
+    <?php require_once('includes/archivosExternosCabecera.php'); ?>
   </head>
 <body>
 
 
     <!-- header y navbar -->
     <?php require_once('includes/header.php'); ?>
-    
+
 
  <section class="bg-white ">
      <div class="container">
@@ -87,7 +87,7 @@
     <div id="collapseFor" class="collapse" aria-labelledby="headingFor" data-parent="#accordionExample">
       <div class="card-body">
       <p class="gray mont">Porque nuestra filosofía es ahorrar en lo accesorio para invertir en lo importante. Para GreenMatik lo importante son los negocios de nuestros clientes y es por ello que le damos prioridad a la calidad y fiabilidad de los componentes con los que fabricamos los equipos Greenmatik.  Ahorramos en improductivos costes de imagen e infraestructuras corporativas, y optimizamos la logística en los procesos de fabricación, control de calidad, transporte, instalación y servicio de asistencia técnica post-venta. En Greenmatik no somos fabricantes o distribuidores de máquinas… somos diseñadores y productores de sueños empresariales. </p>
-     
+
     </div>
     </div>
   </div>
@@ -104,7 +104,7 @@
       <p class="gray mont"><strong> INCLUYEN:</strong> Los planos arquitectónicos de la obra civil previa a realizar, el traslado desde fábrica hasta el negocio del cliente en cualquier ciudad de la República Mexicana*, la instalación y puesta en marcha de los equipos, la capacitación técnica a operadores y los manuales y guías de usuario.
 * Para equipos a instalar en otros países solicita una cotización personalizada.</p>
       <p class="gray mont"><strong>NO INCLUYEN:</strong> La obra civil y las instalaciones eléctricas e hidráulicas a realizar antes de la instalación de los equipos (Se cotiza a parte si el cliente lo solicita). </p>
-     
+
     </div>
     </div>
   </div>
@@ -119,7 +119,7 @@
     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
       <div class="card-body">
       <p class="gray mont">Actualmente solo tenemos cobertura en México.  </p>
-      
+
     </div>
     </div>
   </div>
@@ -134,7 +134,7 @@
     <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
       <div class="card-body">
       <p class="gray mont">Dependiendo del tipo de equipo y el país de entrega los tiempos pueden oscilar entre 70 y 100 días a partir de la orden de compra y pago del anticipo. En el momento de formalización del contrato de compra de los equipos se da una fecha mas aproximada de entrega e instalación. </p>
-      
+
     </div>
     </div>
   </div>
@@ -149,7 +149,7 @@
     <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
       <div class="card-body">
       <p class="gray mont">La forma de pago es a través de transferencia bancaria. Las condiciones estándar son 60% de anticipo a la firma del contrato, 20 % antes iniciar la instalación, y 20% una vez el equipo esté instalado y funcionando a satisfacción el cliente. La adquisición de los equipos puede financiarse de 12 a 36 meses si el cliente cumple con los requisitos crediticios que determine la institución bancaria en la que se solicite el crédito o leasing. </p>
-      
+
     </div>
     </div>
   </div>
@@ -164,7 +164,7 @@
     <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
       <div class="card-body">
       <p class="gray mont">No lo hacemos por una razón de sentido común empresarial. Si necesitas lavar mas de 60  vehículos por hora en tu autolavado, ¿por qué invertir todo tu capital en un solo equipo de grandes dimensiones y exponerte a que ante cualquier incidencia debas parar el 100% de tu producción?. ¿Porqué lavar en serie grandes producciones de autos si puedes hacerlo en paralelo con la mitad de riesgo?. Obviamente invertir mucho en un solo equipo no es una buena idea. Pensando en optimizar tu inversión y hacerla mas segura y productiva, en Greenmatik hemos trabajado para que con lo que cuesta un túnel de lavado europeo o americano de producciones superiores a los 60 vehículos por hora, puedas adquirir 2 túneles de lavado Greenmatik, y evitar detener tu producción ante cualquier contratiempo técnico interno o externo que pueda surgir. </p>
-     
+
     </div>
     </div>
   </div>
@@ -198,7 +198,7 @@
     <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
       <div class="card-body">
       <p class="gray mont">El galvanizado por inmersión en caliente se utiliza desde hace más de 100 años para proteger el acero de la corrosión. El recubrimiento protector se produce al sumergir productos de acero en un baño de zinc fundido. La película de zinc que se forma sobre el acero lo protege de dos maneras, protección de barrera y protección galvánico (catódica). Es este último tipo de protección la que permite que productos de acero puedan permanecer sin corrosión durante décadas. Esto se explica porque en presencia de humedad el zinc actúa como ánodo y el acero como cátodo, de manera que el zinc se corroe en una acción de sacrificio y evita que el acero se oxide. Los equipos GREENMATIK tienen una larga vida útil en cualquier clima porqué son galvanizados en caliente con excepcionales grosores que oscilan entre las 80 y 200 micras, según los modelos.</p>
-      
+
     </div>
     </div>
   </div>
@@ -208,7 +208,7 @@
          </div>
     </div>
  </section>
- 
+
 
 
     <?php require_once('includes/footer.php'); ?>

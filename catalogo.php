@@ -13,12 +13,12 @@
 
     <!-- header y navbar -->
     <?php require_once('includes/header.php'); ?>
-              
+
     <section id="refacciones">
         <div class="container">
             <h1 class="titulo-refacciones">Catálogo</h1>
             <p class="white mt-10 mb-50">Conoce nuestra increíble línea de productos pensada 100% en el mercado Mexicano.
-                
+
  </p>
  <a href="contacto.php"><button class="btn btn-border-white mont">Contáctanos</button></a>
              <a href="contacto.php"><button class="btn btn-blanco ml-10 mont"><i class="fas fa-download"></i> <strong>Catálogo</strong></button></a>
@@ -31,7 +31,7 @@
         </div>
     </section>
 
-  
+
     <section id="filtro" class="catalogo-filtro">
         <div class="container">
             <div class="row justify-content-center" style="margin:70px 0;">

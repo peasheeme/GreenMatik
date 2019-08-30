@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Servicios | Greenmatik  </title>
     <!-- Archivos externos -->
-    <?php require_once('includes/archivosExternosCabecera.php'); ?>     
+    <?php require_once('includes/archivosExternosCabecera.php'); ?>
   </head>
 <body>
 
@@ -18,7 +18,7 @@
                 <div class="col-xs-12 col-md-8">
                 <h1 class="titulo-refacciones">Nuestros Servicios
                 </h1>
-               
+
                 <p class="white mt-10 mb-50">En GreenMatik nos interesa que tu negocio sea rentable, es por ello que  nosotros te llevamos de la mano en todo el proceso de negocio y te ofrecemos los mejores equipos de México y Latinoamérica. </p>
                     <div>
                     <a href="contacto.php"><button class="btn btn-border-white mont">Llámanos</button></a>
@@ -31,7 +31,7 @@
 
     <section id="servicios" class="bg-gray">
         <div class="container">
-               
+
             <div class="row text-left " >
                     <div class="col-xs-12 col-sm-6 col-lg-6  left mt-20" >
                        <a href="servicio-asesoria" style="color:black">
@@ -88,21 +88,21 @@
         <div class="col-xs-12 col-lg-7">
         <img src="images/callto-md.png" alt="GreenMatic" class="mostrar-callto-md mb-20" >
         </div>
-        <div class="col-xs-12 col-lg-5"> 
+        <div class="col-xs-12 col-lg-5">
             <h2 class="callto-title">  <span class="white"> A tu disposición cuando nos necesites.</span> </h2>
-            <p class="white mt-20 mb-50">Nuestra asistencia es integral y permanente. 
+            <p class="white mt-20 mb-50">Nuestra asistencia es integral y permanente.
                 Por teléfono, mail y asistencia virtual. <br> <br>
 
                 Estamos conectados a tu negocio las 24 horas de los 365 días del año, para brindarte la asistencia técnica que merece tu sueño empresarial.</p>
                 <a href="#"><button class="btn btn-border-white mont"><strong>Llámanos</strong></button></a>
             <a href="contacto.php"><button class="btn btn-blanco ml-10 mont"><strong>Contáctanos</strong></button></a>
-            
-            
+
+
         </div>
     </div>
     </div>
     </section>
 
-    
+
 
     <?php require_once('includes/footer.php'); ?>

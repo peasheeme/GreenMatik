@@ -8,7 +8,7 @@
 
 		return $campo;
 	}
-	
+
 	$nombre = limpiarCampos($_POST['nombre']);
 	$contenido = limpiarCampos($_POST['contenido']);
 	$imagen = addslashes(file_get_contents($_FILES['imagenes']['tmp_name']));
